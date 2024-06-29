@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="MenuButton" src="project://database/Assets/UI/Components/Buttons/MainButton/MenuButton.uxml?fileID=9197481963319205126&amp;guid=782abb100da907240b6691ba1a25218b&amp;type=3#MenuButton" />
+    <ui:VisualElement name="MainPanel" style="flex-grow: 1; width: 100%; height: 100%; justify-content: center; align-self: center;">
+        <ui:Instance name="start" template="MenuButton" >
+            <AttributeOverrides element-name="text" text="Começar" />
+        </ui:Instance>
+        <ui:Instance name="settings" template="MenuButton" >
+            <AttributeOverrides element-name="text" text="Configurações" />
+        </ui:Instance>
+        <ui:Instance name="credits" template="MenuButton" >
+            <AttributeOverrides element-name="text" text="Creditos" />
+        </ui:Instance>
+    </ui:VisualElement>
+</ui:UXML>
