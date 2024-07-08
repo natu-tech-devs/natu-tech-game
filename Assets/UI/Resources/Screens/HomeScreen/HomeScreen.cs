@@ -10,9 +10,9 @@ public class ButtonContent
 
 public class HomeScreen : MonoBehaviour
 {
-    public VisualTreeAsset visualTree;
-    public UIDocument document;
-    readonly List<ButtonContent> buttonNames = new() { 
+    private VisualTreeAsset visualTree;
+    private UIDocument document;
+    readonly private List<ButtonContent> buttonNames = new() { 
         new() { Text = "Jogar" },
         new() { Text = "Opções", Icon = "settings-icon" },
         new() { Text = "Acessibilidade" },
@@ -20,11 +20,12 @@ public class HomeScreen : MonoBehaviour
         new() { Text = "Marketplace" },
         new() { Text = "Sair", Icon = "close-icon" }
     };
-
     void Start()
     {
         this.document = GetComponent<UIDocument>();
         this.CreateMenuButtons();
+        this.HideMenu();
+        this.StartCoroutine(this.ShowMenuAfterDelay());
     }
 
     void CreateMenuButtons()
@@ -42,5 +43,21 @@ public class HomeScreen : MonoBehaviour
             menuButton.AddToClassList("flex-gap");
             menuContainer.Add(menuButton);
         });
+    }
+
+    void HideMenu()
+    {
+        document.rootVisualElement.Q("menu-container").AddToClassList("hide");
+    }
+
+    void ShowMenu()
+    {
+        document.rootVisualElement.Q("menu-container").RemoveFromClassList("hide");
+    }
+
+    System.Collections.IEnumerator ShowMenuAfterDelay()
+    {
+        yield return new WaitForSeconds(0.25f);
+        this.ShowMenu();
     }
 }

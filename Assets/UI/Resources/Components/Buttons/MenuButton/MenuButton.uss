@@ -18,6 +18,11 @@
     justify-content: center;
     flex-direction: row;
     position: relative;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-button:active {
+    scale: 0.85;
 }
 
 .menu-button-text {
