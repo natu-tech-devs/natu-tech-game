@@ -1,7 +1,0 @@
- .mainButton {
-    background-color: rgba(0,0,0,0);
-}
-
-#start > #mainButton {
-    background-image: url("project://database/Assets/UI/Images/Buttons/Botão Jogar.svg");
-}
