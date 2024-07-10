@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Resources/Screens/HomeScreen/HomeScreen.uss?fileID=7433441132597879392&amp;guid=7b772ccc656a59d46a0339020a98e511&amp;type=3#HomeScreen" />
+    <ui:VisualElement name="home-background" class="home-background">
+        <ui:VisualElement name="home-container" class="home-container">
+            <ui:VisualElement name="logo-container" class="logo-container">
+                <ui:VisualElement name="logo" class="logo" />
+            </ui:VisualElement>
+            <ui:VisualElement name="menu-container" class="menu-container" />
+            <ui:VisualElement style="flex-grow: 1; flex-basis: 33%;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
