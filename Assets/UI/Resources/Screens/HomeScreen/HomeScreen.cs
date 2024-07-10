@@ -1,10 +1,12 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class ButtonContent
 {   public string Text { get; set; }
     public string Icon { get; set; }
+    public EventCallback<ClickEvent> OnClick { get; set; }
 }
 
 
@@ -15,7 +17,7 @@ public class HomeScreen : MonoBehaviour
     readonly private List<ButtonContent> buttonNames = new() { 
         new() { Text = "Jogar" },
         new() { Text = "Opções", Icon = "settings-icon" },
-        new() { Text = "Acessibilidade" },
+        new() { Text = "Acessibilidade", OnClick = (e) => { SceneManager.LoadScene("AcessibilityMenu");}},
         new() { Text = "Informações" },
         new() { Text = "Marketplace" },
         new() { Text = "Sair", Icon = "close-icon" }
@@ -40,6 +42,13 @@ public class HomeScreen : MonoBehaviour
                 var icon = Resources.Load<VectorImage>($"Images/Icons/{button.Icon}");
                 menuButton.Icon = icon;
             }
+            
+            if(button.OnClick != null)
+            {
+                menuButton.OnClick(button.OnClick);
+            }
+
+
             menuButton.AddToClassList("flex-gap");
             menuContainer.Add(menuButton);
         });
