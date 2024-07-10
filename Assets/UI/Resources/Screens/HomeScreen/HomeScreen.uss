@@ -48,7 +48,7 @@
 }
 
 .logo {
-    background-image: resource('Images/Icons/company-icon');
+    background-image: resource('Images/Logo/logo-purple');
     max-width: none;
     max-height: none;
     width: 220px;
