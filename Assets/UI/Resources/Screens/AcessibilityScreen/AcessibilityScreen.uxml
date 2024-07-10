@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Resources/Screens/AcessibilityScreen/AcessibilityScreen.uss?fileID=7433441132597879392&amp;guid=4c16427828f9a7f42b16ac3807a6fdff&amp;type=3#AcessibilityScreen" />
+    <ui:VisualElement name="acessibility-background" class="acessibility-background">
+        <ui:VisualElement name="acessibility-modal" class="acessibility-modal">
+            <ui:VisualElement name="acessibility-title" class="acessibility-title">
+                <ui:Label text="ACESSIBILIDADE" name="Label" />
+            </ui:VisualElement>
+            <ui:VisualElement name="acessibility-sliders" class="acessibility-sliders" />
+            <ui:VisualElement name="acessibility-buttons" class="acessibility-buttons" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
