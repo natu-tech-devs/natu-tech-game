@@ -1,0 +1,56 @@
+.home-background {
+    background-image: url("project://database/Assets/UI/Resources/Images/Menu/main-menu-background.jpg?fileID=2800000&guid=50214555e8330ef4e9e6c3c5da00abb8&type=3#main-menu-background");
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    align-self: auto;
+}
+
+.menu-container {
+    justify-content: center;
+    align-items: stretch;
+    align-self: auto;
+    width: 100%;
+    max-width: 392px;
+    flex-shrink: 1;
+    flex-basis: 33%;
+    transition: all 0.5s ease-in-out;
+}
+
+.hide {
+    opacity: 0;
+    scale: 0.5;
+}
+
+.flex-gap {
+    margin-bottom: 6px;
+}
+
+.home-container {
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-container {
+    background-image: none;
+    width: auto;
+    height: 100%;
+    flex-basis: 33%;
+    max-width: none;
+    max-height: none;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.logo {
+    background-image: resource('Images/Icons/company-icon');
+    max-width: none;
+    max-height: none;
+    width: 220px;
+    height: 128px;
+}

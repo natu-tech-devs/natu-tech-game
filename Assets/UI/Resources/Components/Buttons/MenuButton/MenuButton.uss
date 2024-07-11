@@ -1,0 +1,48 @@
+.menu-button {
+    background-color: rgba(190, 190, 190, 0);
+    border-radius: 5px;
+    background-image: url("project://database/Assets/UI/Resources/Images/Buttons/Bot%C3%A3o%20Background.svg?fileID=7388822144124034973&guid=9d4401aba404a794a9b263514b02653e&type=3#Botão Background");
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left-color: rgba(56, 56, 56, 0);
+    border-right-color: rgba(56, 56, 56, 0);
+    border-top-color: rgba(56, 56, 56, 0);
+    border-bottom-color: rgba(56, 56, 56, 0);
+    padding-top: 6px;
+    padding-right: 24px;
+    padding-bottom: 6px;
+    padding-left: 24px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-button:active {
+    scale: 0.85;
+}
+
+.menu-button-text {
+    -unity-font: url("project://database/Assets/UI/Resources/Fonts/Slackey/Slackey-Regular.ttf?fileID=12800000&guid=b12db3e78852b7d4a9f56f3caabdf5fb&type=3#Slackey-Regular");
+    -unity-font-definition: initial;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    text-shadow: 0 0 0 rgb(255, 255, 255);
+    -unity-text-outline-color: rgb(248, 238, 181);
+    -unity-text-outline-width: 1.5px;
+    color: rgb(71, 0, 0);
+    font-size: 32px;
+    padding: 0 0 0 0;
+    letter-spacing: -10px;
+}
+
+.menu-button-icon {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    position: absolute;
+    left: 32px;
+}
