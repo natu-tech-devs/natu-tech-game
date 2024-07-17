@@ -1,0 +1,24 @@
+#custom-toggle Label {
+    display: none;
+}
+
+#unity-checkmark {
+    background-color: transparent;
+    display: none;
+}
+
+#custom-toggle {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
+#custom-toggle .custom-toggle-indicator {
+    width: 60px;
+    height: 60px;
+}

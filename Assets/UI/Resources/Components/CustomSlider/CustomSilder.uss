@@ -82,3 +82,30 @@
     padding-bottom: 0;
     padding-left: 0;
 }
+
+.custom-slider-container {
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.custom-slider-icon {
+    height: 32px;
+    width: 32px;
+    background-color: rgba(255, 0, 0, 0);
+    flex-shrink: 1;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.plus-icon {
+    background-image: resource('Images/Icons/plus-icon');
+    margin-left: 12px;
+}
+
+.minus-icon {
+    background-image: resource('Images/Icons/minus-icon');
+    -unity-background-scale-mode: scale-to-fit;
+    margin-right: 12px;
+}
