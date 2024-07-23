@@ -33,7 +33,7 @@
     padding-right: 0;
     padding-bottom: 0;
     padding-left: 0;
-    -unity-font: resource('Fonts/Slackey/Slackey-Regular');
+    -unity-font: var(--font-display);
     -unity-font-definition: initial;
     font-size: 28px;
 }
