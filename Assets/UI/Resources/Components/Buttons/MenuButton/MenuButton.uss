@@ -1,3 +1,5 @@
+@import url("project://database/Assets/UI/Resources/GlobalStyles/GlobalStyles.uss");
+
 .menu-button {
     background-color: rgba(190, 190, 190, 0);
     border-radius: 5px;
@@ -23,20 +25,6 @@
 
 .menu-button:active {
     scale: 0.85;
-}
-
-.menu-button-text {
-    -unity-font: url("project://database/Assets/UI/Resources/Fonts/Slackey/Slackey-Regular.ttf?fileID=12800000&guid=b12db3e78852b7d4a9f56f3caabdf5fb&type=3#Slackey-Regular");
-    -unity-font-definition: initial;
-    -unity-font-style: bold;
-    -unity-text-align: middle-center;
-    text-shadow: 0 0 0 rgb(255, 255, 255);
-    -unity-text-outline-color: rgb(248, 238, 181);
-    -unity-text-outline-width: 1.5px;
-    color: rgb(71, 0, 0);
-    font-size: 32px;
-    padding: 0 0 0 0;
-    letter-spacing: -10px;
 }
 
 .menu-button-icon {

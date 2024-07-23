@@ -3,7 +3,7 @@
     <ui:VisualElement name="acessibility-background" class="acessibility-background">
         <ui:VisualElement name="acessibility-header" class="acessibility-header" style="flex-grow: 0;">
             <ui:VisualElement name="acessibility-title" class="acessibility-title">
-                <ui:Label text="ACESSIBILIDADE" name="Label" />
+                <ui:Label text="ACESSIBILIDADE" class="title" name="Label" />
             </ui:VisualElement>
             <ui:VisualElement name="logo" class="logo" style="flex-grow: 1;" />
         </ui:VisualElement>
