@@ -1,0 +1,26 @@
+:root {
+
+  --primary-color-01: #470000;
+  --primary-color-02: #653912;
+  --primary-color-03: #F9F6BD;
+
+  --font-display: resource('Fonts/Slackey/Slackey-Regular');
+
+}
+
+.title {
+  
+    -unity-font: var(--font-display);
+    -unity-font-definition: initial;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+
+    -unity-text-outline-color: rgb(248, 238, 181);
+    -unity-text-outline-width: 1.5px;
+
+    color: var(--primary-color-01);
+
+    font-size: 32px;
+    padding: 0px 0px 0px 0px;
+    letter-spacing: -10px;
+}
