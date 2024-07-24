@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Resources/Screens/NewLevelUnlockedScreen/NewLevelUnlocked.uss?fileID=7433441132597879392&amp;guid=696994219f2b86f468fd677aa38f5bed&amp;type=3#NewLevelUnlocked" />
+    <ui:VisualElement name="modal-container" class="modal-container">
+        <ui:VisualElement name="modal-image" class="modal-image">
+            <ui:VisualElement name="modal-coins-highlight" class="modal-coins-highlight" />
+            <ui:VisualElement name="modal-coins-icon" class="modal-coins-icon" />
+        </ui:VisualElement>
+        <ui:Label name="modal-title" text="Nova Fase Desbloqueada" class="modal-title" />
+        <ui:Label name="modal-text" text="Parabéns! Você desbloqueou uma nova fase e ganhou NatuCoins" class="modal-text" />
+        <ui:VisualElement name="button-container" style="flex-grow: 0;" />
+    </ui:VisualElement>
+</ui:UXML>

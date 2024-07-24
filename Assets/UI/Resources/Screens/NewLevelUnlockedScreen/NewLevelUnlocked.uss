@@ -1,0 +1,94 @@
+@import url("project://database/Assets/UI/Resources/GlobalStyles/GlobalStyles.uss?fileID=7433441132597879392&guid=55b51d087ab63184aa220d3790e30de0&type=3#GlobalStyles");
+.modal-container {
+    width: 100%;
+    height: 100%;
+    background-image: none;
+    align-items: center;
+    justify-content: space-between;
+    -unity-background-scale-mode: stretch-to-fill;
+    -unity-slice-left: 0;
+    -unity-slice-right: 0;
+    -unity-slice-top: 0;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    position: relative;
+    background-color: rgb(76, 134, 43);
+    flex-direction: column;
+}
+
+.modal-title {
+    font-size: 42px;
+    color: rgb(255, 255, 255);
+    -unity-font: var(--font-display);
+    -unity-font-definition: initial;
+    color: var(--primary-color-03);
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    -unity-text-outline-width: 0;
+    -unity-text-outline-color: rgb(0, 0, 0);
+    text-shadow: 0 0 0 rgb(0, 0, 0);
+}
+
+.modal-coins-icon {
+    background-image: resource('Images/General/natu-coins-icon');
+    width: 200px;
+    height: 200px;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.modal-coins-highlight {
+    background-image: resource('Images/General/highlight-background');
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    -unity-background-scale-mode: scale-to-fit;
+    top: 50%;
+    left: 50%;
+    justify-content: flex-start;
+    align-items: auto;
+    translate: -50% -50%;
+    margin-right: 0;
+    margin-left: 0;
+    display: flex;
+}
+
+.modal-image {
+    width: 600px;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-text {
+    -unity-font: resource('Fonts/Georama/static/Georama-Bold');
+    -unity-font-definition: initial;
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    -unity-text-align: upper-center;
+    width: 100%;
+    max-width: 520px;
+    white-space: normal;
+    margin-top: 200px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
+.modal-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -60%;
+}
