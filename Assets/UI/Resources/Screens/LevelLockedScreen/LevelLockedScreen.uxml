@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Resources/Screens/LevelLockedScreen/LevelLockedScreen.uss" />
+
+    <ui:VisualElement name="modal-container" class="modal-container">
+        <ui:Button parse-escape-sequences="false" display-tooltip-when-elided="true" name="modal-close" class="modal-close">
+            <ui:Label tabindex="-1" text="Fechar" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+            <ui:VisualElement style="flex-grow: 1;" />
+        </ui:Button>
+        <ui:Label name="modal-title" text="Fase Bloqueada!" class="modal-title" style="color: rgb(255, 0, 0);" />
+        <ui:VisualElement name="modal-image" class="modal-image" />
+        <ui:Label name="modal-text" text="Complete a fase anterior&#10;para desbloquear essa tela!" class="modal-text" />
+    </ui:VisualElement>
+    
+</ui:UXML>
