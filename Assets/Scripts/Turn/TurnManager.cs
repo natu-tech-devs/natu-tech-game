@@ -17,6 +17,7 @@ public class TurnManager
 
     public void startCurrentTurn()
     {
+        Debug.Log("Start Current Turn");
         currentTurn?.startTurn(() =>
         {
             turns.Enqueue(new Turn());
@@ -25,6 +26,7 @@ public class TurnManager
 
     public void addCurrentTurnAction(TurnAction action)
     {
+        if(currentTurn == null) turns.Enqueue(new());
         currentTurn?.addTurnAction(action);
     }
 

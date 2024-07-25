@@ -1,17 +1,21 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-
-    private TurnManager turnManager;
+    public TurnManager turnManager = new();
 
     public static Player player;
 
     public static GameManager gm;
 
-    // Start is called before the first frame update
+
+    public Action turnPrep;
+    public Action playerAction;
+
     private void Awake()
     {
         if (GameManager.gm == null)
@@ -20,10 +24,18 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void startTurn(){
-        turnManager.startCurrentTurn();
+    public void endPlayerTurn()
+    {
+        if (playerAction != null)
+            playerAction();
+        startTurn();
     }
 
+    private void startTurn()
+    {
 
-
+        if (turnPrep != null)
+            turnPrep();
+        turnManager.startCurrentTurn();
+    }
 }

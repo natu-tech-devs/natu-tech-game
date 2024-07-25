@@ -14,6 +14,7 @@ public class Turn
 
     public void startTurn(Action onEnd = null)
     {
+        Debug.Log("Start Turn");
         actions.ForEach((action) => action.takeAction());
         if (onEnd != null)
         {
