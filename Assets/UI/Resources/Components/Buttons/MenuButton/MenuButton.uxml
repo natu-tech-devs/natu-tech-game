@@ -2,6 +2,6 @@
     <Style src="/Assets/UI/Resources/Components/Buttons/MenuButton/MenuButton.uss" />
         <ui:Button name="menu-button" class="menu-button">
             <ui:VisualElement name="menu-button-icon" class="menu-button-icon" />
-            <ui:Label name="menu-button-text" text="DEFAULT TEXT" class="menu-button-text" />
+            <ui:Label name="menu-button-text" text="DEFAULT TEXT" class="title menu-button-text" />
         </ui:Button>
 </ui:UXML>

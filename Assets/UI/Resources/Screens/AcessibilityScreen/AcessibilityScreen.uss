@@ -1,15 +1,6 @@
+@import url("project://database/Assets/UI/Resources/GlobalStyles/GlobalStyles.uss");
+
 .acessibility-title {
-    -unity-font: resource('Fonts/Slackey/Slackey-Regular');
-    -unity-font-definition: initial;
-    -unity-font-style: bold;
-    -unity-text-align: middle-center;
-    text-shadow: 0 0 0 rgb(255, 255, 255);
-    -unity-text-outline-color: rgb(248, 238, 181);
-    -unity-text-outline-width: 1.5px;
-    color: rgb(71, 0, 0);
-    font-size: 32px;
-    padding: 0 0 0 0;
-    letter-spacing: -10px;
     background-image: resource('Images/General/wood-with-shadow');
     padding-bottom: 16px;
     padding-left: 16px;
@@ -33,7 +24,7 @@
 }
 
 .acessibility-slider-label {
-    color: rgb(101, 57, 18);
+    color: var(--primary-color-02);
     margin-top: 0;
     margin-right: 0;
     margin-bottom: 0;
@@ -42,7 +33,7 @@
     padding-right: 0;
     padding-bottom: 0;
     padding-left: 0;
-    -unity-font: resource('Fonts/Slackey/Slackey-Regular');
+    -unity-font: var(--font-display);
     -unity-font-definition: initial;
     font-size: 28px;
 }
