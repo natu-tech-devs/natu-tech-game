@@ -12,6 +12,9 @@ GameObject:
   - component: {fileID: 1197546645338490665}
   - component: {fileID: 460295897650307582}
   - component: {fileID: 1978694943563057984}
+  - component: {fileID: 654744377671192240}
+  - component: {fileID: 1032313544532021048}
+  - component: {fileID: 7977361902258193684}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -47,6 +50,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: {fileID: 0}
+  attacker: {fileID: 0}
+  defender: {fileID: 0}
+  statusEffect: {fileID: 0}
+  sphere: {fileID: 532968164907516632, guid: 267e70b98a8f49e4988d148a869dc2bd, type: 3}
+  launchForce: 500
 --- !u!114 &460295897650307582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77,7 +85,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1197546645338490665}
         m_TargetAssemblyTypeName: Player, Assembly-CSharp
-        m_MethodName: testAction
+        m_MethodName: sphereAttack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -112,3 +120,47 @@ MonoBehaviour:
   onDeath:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &654744377671192240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8536249155213787420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34bee63ce8a8bde4584ca8baa33f3f30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defenseMultiplier: 1
+  attackMultiplier: 1
+--- !u!114 &1032313544532021048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8536249155213787420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fe8d6dae2091f2499db49a7d5cb88ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attack:
+    damage: 15
+    type: 1
+    element: 256
+  attackRatio: 1
+--- !u!114 &7977361902258193684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8536249155213787420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b74769326ed0fe4c871ceb3d0ed96ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defenseRatio: 1
