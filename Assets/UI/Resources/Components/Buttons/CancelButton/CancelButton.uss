@@ -1,0 +1,12 @@
+@import url("project://database/Assets/UI/Resources/GlobalStyles/GlobalStyles.uss?fileID=7433441132597879392&guid=55b51d087ab63184aa220d3790e30de0&type=3#GlobalStyles");
+.cancel-button {
+    background-image: resource('Images/Buttons/cancel-button-background');
+    -unity-font: var(--font-display);
+    -unity-font-definition: initial;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+}
