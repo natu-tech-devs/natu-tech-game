@@ -1,0 +1,46 @@
+{
+    "name": "GameInput",
+    "maps": [
+        {
+            "name": "gameplay",
+            "id": "021f4ad2-8f43-4c39-bf70-ece0a8cf05ca",
+            "actions": [
+                {
+                    "name": "click",
+                    "type": "Button",
+                    "id": "df1b561b-23d0-4e3f-84b8-fefbeaaffb6d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "5915538c-5c2c-4de8-adf1-434755ac6d5e",
+                    "path": "<Pointer>/press",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "GlobalController",
+                    "action": "click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "GlobalController",
+            "bindingGroup": "GlobalController",
+            "devices": [
+                {
+                    "devicePath": "<Pointer>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
