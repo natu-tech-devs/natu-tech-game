@@ -1,5 +1,5 @@
 .home-background {
-    background-image: url("project://database/Assets/UI/Resources/Images/Menu/main-menu-background.jpg?fileID=2800000&guid=50214555e8330ef4e9e6c3c5da00abb8&type=3#main-menu-background");
+    background-image: resource("Images/General/main-menu-background");
     width: 100%;
     height: 100%;
     justify-content: center;
@@ -48,7 +48,7 @@
 }
 
 .logo {
-    background-image: resource('Images/Icons/company-icon');
+    background-image: resource('Images/Logo/logo-purple');
     max-width: none;
     max-height: none;
     width: 220px;
