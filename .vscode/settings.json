@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "natu-tech-game.sln"
+    "dotnet.defaultSolution": "NatuTech.sln"
 }
