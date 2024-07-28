@@ -1,0 +1,50 @@
+@import url("project://database/Assets/UI/Resources/GlobalStyles/GlobalStyles.uss?fileID=7433441132597879392&guid=55b51d087ab63184aa220d3790e30de0&type=3#GlobalStyles");
+
+.confirm-button {
+    background-image: resource('Images/Buttons/confirm-button-background');
+    -unity-font: var(--font-display);
+    -unity-font-definition: initial;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    font-size: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 64px;
+    padding-left: 42px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: auto;
+    flex-wrap: nowrap;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+}
+
+.confirm-button-icon {
+    width: 32px;
+    height: 32px;
+    background-image: resource('Images/Icons/check-icon');
+    position: absolute;
+    right: 24px;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.confirm-button-label {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    font-size: 32px;
+}
+
+.confirm-button:active {
+    scale: 0.85;
+}
