@@ -25,14 +25,6 @@ public class Sphere : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
-        Character c = collision.gameObject.GetComponent<Character>();
-        if (c != null)
-        {
-            CharacterManager.PlayerAttack(c, this.attack);
-            onHit.Invoke();
-            if (gameObject)
-                GameObject.Destroy(gameObject);
-        }
     }
 
 }
