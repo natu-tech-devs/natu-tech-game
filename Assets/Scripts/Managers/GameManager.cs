@@ -26,8 +26,6 @@ public class GameManager : MonoBehaviour
 
     public void endPlayerTurn()
     {
-        if (playerAction != null)
-            playerAction();
         startTurn();
     }
 

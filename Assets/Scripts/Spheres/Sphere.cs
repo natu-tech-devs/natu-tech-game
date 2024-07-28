@@ -8,10 +8,9 @@ using UnityEngine.Events;
 public class Sphere : MonoBehaviour
 {
 
-    [SerializeField]
-    public Attack attack;
-
     public UnityEvent onHit;
+
+    public Attacker attacker;
 
     public new Rigidbody rigidbody => GetComponent<Rigidbody>();
 
@@ -22,9 +21,18 @@ public class Sphere : MonoBehaviour
             GameObject.Destroy(gameObject);
     }
 
+    public void launch(Vector3 force, Attacker attacker)
+    {
+        this.attacker = attacker;
+        rigidbody.AddForce(force);
+    }
 
     public void OnCollisionEnter(Collision collision)
     {
+        Defender defender = collision.gameObject.GetComponent<Defender>();
+        if (defender != null && attacker != null)
+            attacker.Attack(defender);
+        GameObject.Destroy(gameObject);
     }
 
 }

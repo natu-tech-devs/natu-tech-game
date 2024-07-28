@@ -49,6 +49,6 @@ public class Health : MonoBehaviour
         if (!deathConditions.Aggregate(true, (acc, current) => acc && current(health,0))) return;
 
         onDamage.Invoke();
-        GameObject.Destroy(this);
+        GameObject.Destroy(gameObject);
     }
 }

@@ -13,6 +13,10 @@ GameObject:
   - component: {fileID: 3564952474355194703}
   - component: {fileID: 2633575179299581353}
   - component: {fileID: 5111538272877003241}
+  - component: {fileID: 5269906603824436176}
+  - component: {fileID: 2927022052287275938}
+  - component: {fileID: 5376936718283101795}
+  - component: {fileID: 342413249398266918}
   m_Layer: 0
   m_Name: MobTest
   m_TagString: Untagged
@@ -118,15 +122,65 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 955088a428684884f830fbe30e557a9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
-  elemetType: 1
-  target: {fileID: 0}
-  onDeath:
-    m_PersistentCalls:
-      m_Calls: []
+--- !u!114 &5269906603824436176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8598220941913724521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2517ad47dfaf74f44bbb3386b57307c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   onDamage:
     m_PersistentCalls:
       m_Calls: []
-  onAttack:
+  onDeath:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2927022052287275938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8598220941913724521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34bee63ce8a8bde4584ca8baa33f3f30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defenseMultiplier: 1
+  attackMultiplier: 1
+--- !u!114 &5376936718283101795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8598220941913724521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fe8d6dae2091f2499db49a7d5cb88ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attack:
+    damage: 1
+    type: 1
+    element: 1
+  attackRatio: 1
+--- !u!114 &342413249398266918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8598220941913724521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b74769326ed0fe4c871ceb3d0ed96ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defenseRatio: 1

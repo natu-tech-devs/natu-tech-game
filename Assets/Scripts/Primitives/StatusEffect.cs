@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,14 +7,18 @@ public delegate void onEffect(ElemetType currentType, ElemetType newType);
 public class StatusEffect : MonoBehaviour
 {
 
-    public List<onEffect> onEffects = new();
+
+    public onEffect onEffects;
+
+    public float defenseMultiplier = 1;
+    public float attackMultiplier = 1;
+
 
     [SerializeField]
     public ElemetType currentElement { get; private set; } = ElemetType.WATER;
 
-    public void appyEffecnt(ElemetType elemetType)
+    public void applyEffect(ElemetType elemetType)
     {
-        onEffects.ForEach((effect) => effect(currentElement, elemetType));
-        currentElement = elemetType;
+        onEffects(currentElement, elemetType);
     }
 }
