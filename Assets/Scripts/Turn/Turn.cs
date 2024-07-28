@@ -10,6 +10,7 @@ public class Turn
     //TODO add priority queue
     private List<TurnAction> actions = new();
 
+    public bool playerSuccess = false;
 
 
     public void startTurn(Action onEnd = null)

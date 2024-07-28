@@ -14,7 +14,7 @@ public class Health : MonoBehaviour
     [SerializeField]
     public float health { get; private set; } = 100f;
 
-    public UnityEvent onDamage;
+    public Action onDamage;
 
     public UnityEvent onDeath;
 
@@ -29,10 +29,10 @@ public class Health : MonoBehaviour
         if (!damageCondigitons.Aggregate(true, (acc, current) => acc && current(health,damage))) return;
 
         health -= damage;
+        onDamage.Invoke();
         if (health <= 0)
         {
             health = 0;
-            onDamage.Invoke();
             die();
         }
     }

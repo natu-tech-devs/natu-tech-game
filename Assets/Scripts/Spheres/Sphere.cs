@@ -14,6 +14,8 @@ public class Sphere : MonoBehaviour
 
     public new Rigidbody rigidbody => GetComponent<Rigidbody>();
 
+    public Action onDestroyAction;
+
     IEnumerator Start()
     {
         yield return new WaitForSeconds(4);
@@ -21,10 +23,12 @@ public class Sphere : MonoBehaviour
             GameObject.Destroy(gameObject);
     }
 
-    public void launch(Vector3 force, Attacker attacker)
+    public void launch(Vector3 force, Attacker attacker, Action callback = null)
     {
         this.attacker = attacker;
         rigidbody.AddForce(force);
+        if (callback != null)
+            onDestroyAction += callback;
     }
 
     public void OnCollisionEnter(Collision collision)
@@ -32,7 +36,14 @@ public class Sphere : MonoBehaviour
         Defender defender = collision.gameObject.GetComponent<Defender>();
         if (defender != null && attacker != null)
             attacker.Attack(defender);
-        GameObject.Destroy(gameObject);
+        if (defender != null)
+            GameObject.Destroy(gameObject);
+    }
+
+    public void OnDestroy()
+    {
+        if (onDestroyAction != null) onDestroyAction();
+        Debug.Log("Destroy sphere");
     }
 
 }
