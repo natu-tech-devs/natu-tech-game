@@ -5,10 +5,10 @@ using UnityEngine;
 
 public class TurnAction 
 {
-    public bool validation = true;
+    public Func<bool> validation = () => true;
     public Action  action;
 
     public void takeAction(){
-        if(validation) action();
+        if(validation()) action();
     }
 }

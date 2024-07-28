@@ -1,8 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TurnManager 
+public class TurnManager
 {
     #region 
     private List<Turn> turns = new();
@@ -10,40 +11,57 @@ public class TurnManager
 
 
 #nullable enable
-    public Turn? currentTurn => turns.Count > 0 ? turns[turnIndex] : (Turn?)null;
+    public Turn? currentTurn => turns.Count > turnIndex ? turns[turnIndex] : (Turn?)null;
 #nullable disable
 
+    public bool getPlayerSuccess => currentTurn != null ? currentTurn.playerSuccess : false;
 
     #endregion
+
+    public void playerSuccess()
+    {
+        if (currentTurn != null)
+            currentTurn.playerSuccess = true;
+    }
+
 
     public void startCurrentTurn()
     {
         Debug.Log("Start Current Turn");
+        if(currentTurn == null) {
+            fillTurns(turnIndex);
+        }
         currentTurn?.startTurn(() =>
         {
-            turnIndex++;
+            if(turns.Count < turnIndex++){
+                turns.Add(new Turn());
+            }
         });
     }
 
     public void addCurrentTurnAction(TurnAction action)
     {
-        if(currentTurn == null) {
-            turns[turnIndex] = new Turn();
+        if (currentTurn == null)
+        {
+            turns.Add(new Turn());
         }
         currentTurn?.addTurnAction(action);
     }
 
-    private void fillTurns(int fillsTo){
-        if(fillsTo < 0) return;
+    private void fillTurns(int fillsTo)
+    {
+        if (fillsTo < 0) return;
 
         int finalSize = turns.Count - turnIndex + fillsTo;
-        for(int counter = turns.Count - turnIndex; counter < finalSize; counter++){
+        for (int counter = turns.Count - turnIndex; counter < finalSize; counter++)
+        {
             turns.Add(new Turn());
         }
 
     }
 
-    public void addTurnAction(TurnAction action, int skipTurns = 0){
+    public void addTurnAction(TurnAction action, int skipTurns = 0)
+    {
         fillTurns(skipTurns);
         turns[turnIndex + skipTurns - 1].addTurnAction(action);
     }

@@ -17,6 +17,7 @@ public class MobTest : MonoBehaviour
     private Attacker attacker;
     private Defender defender;
 
+
     private int debufDuration = 2;
     private int debufCurrentDuration = 0;
 
@@ -29,19 +30,24 @@ public class MobTest : MonoBehaviour
     };
     void turnPrep()
     {
-        Debug.Log("Mob turn prep, debuf duration: " + debufCurrentDuration);
-        Debug.Log("Current defense: " + defender.defenseRatio);
-
         if (debufCurrentDuration >= debufDuration)
         {
             debufCurrentDuration = 0;
             defender.defenseRatio /= defenseDebufRatio;
         }
+
+        GameManager.gm.turnManager.addCurrentTurnAction(new TurnAction(){
+            action = turnAction
+        });
     }
+
+
 
     void turnAction()
     {
-        Debug.Log("Mob Turn Action");
+        if(!GameManager.gm.getPlayerSuccess){
+            attacker.Attack(GameManager.player.defender);
+        }
     }
     void Start()
     {
@@ -59,6 +65,9 @@ public class MobTest : MonoBehaviour
             health.takeDamage(attack.damage);
             Debug.Log(health.health);
         };
+
+
+
     }
 
     void onEffect(ElemetType currentType, ElemetType newType)

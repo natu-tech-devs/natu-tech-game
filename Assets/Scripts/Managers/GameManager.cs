@@ -14,7 +14,10 @@ public class GameManager : MonoBehaviour
 
 
     public Action turnPrep;
+    public Action playerFailure;
     public Action playerAction;
+
+    public bool getPlayerSuccess => turnManager.getPlayerSuccess;
 
     private void Awake()
     {
@@ -26,7 +29,14 @@ public class GameManager : MonoBehaviour
 
     public void endPlayerTurn()
     {
+        if(!turnManager.getPlayerSuccess && playerFailure != null){
+            playerFailure();
+        }
         startTurn();
+    }
+
+    public void playerSuccess(){
+        turnManager.playerSuccess();
     }
 
     private void startTurn()
