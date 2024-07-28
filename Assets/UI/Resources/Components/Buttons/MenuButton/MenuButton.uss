@@ -1,9 +1,8 @@
-@import url("project://database/Assets/UI/Resources/GlobalStyles/GlobalStyles.uss");
-
+@import url("project://database/Assets/UI/Resources/GlobalStyles/GlobalStyles.uss?fileID=7433441132597879392&guid=55b51d087ab63184aa220d3790e30de0&type=3#GlobalStyles");
 .menu-button {
     background-color: rgba(190, 190, 190, 0);
     border-radius: 5px;
-    background-image: url("project://database/Assets/UI/Resources/Images/Buttons/Bot%C3%A3o%20Background.svg?fileID=7388822144124034973&guid=9d4401aba404a794a9b263514b02653e&type=3#Botão Background");
+    background-image: resource('Images/General/wood-with-shadow');
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
@@ -12,9 +11,9 @@
     border-right-color: rgba(56, 56, 56, 0);
     border-top-color: rgba(56, 56, 56, 0);
     border-bottom-color: rgba(56, 56, 56, 0);
-    padding-top: 6px;
+    padding-top: 2px;
     padding-right: 24px;
-    padding-bottom: 6px;
+    padding-bottom: 16px;
     padding-left: 24px;
     align-items: center;
     justify-content: center;

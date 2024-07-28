@@ -37,16 +37,16 @@ public class HomeScreen : MonoBehaviour
         buttonNames.ForEach((button) => {
             MenuButton menuButton = new() { Text = button.Text };
 
-            if(button.Icon != null)
-            {
-                var icon = Resources.Load<VectorImage>($"Images/Icons/{button.Icon}");
-                menuButton.Icon = icon;
-            }
+            // if(button.Icon != null)
+            // {
+            //     var icon = Resources.Load<VectorImage>($"Images/Icons/{button.Icon}");
+            //     menuButton.Icon = icon;
+            // }
             
-            if(button.OnClick != null)
-            {
-                menuButton.OnClick(button.OnClick);
-            }
+            // if(button.OnClick != null)
+            // {
+            //     menuButton.OnClick(button.OnClick);
+            // }
 
 
             menuButton.AddToClassList("flex-gap");
