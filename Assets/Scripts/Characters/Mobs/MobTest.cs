@@ -17,6 +17,17 @@ public class MobTest : MonoBehaviour
     private Attacker attacker;
     private Defender defender;
 
+    [SerializeField]
+    private GameObject summon;
+
+    [SerializeField]
+    private Transform spawnPoint;
+
+    [SerializeField]
+    private GameObject sphere;
+
+    private float summonOffset = 0f;
+
 
     private int debufDuration = 2;
     private int debufCurrentDuration = 0;
@@ -36,18 +47,53 @@ public class MobTest : MonoBehaviour
             defender.defenseRatio /= defenseDebufRatio;
         }
 
-        GameManager.gm.turnManager.addCurrentTurnAction(new TurnAction(){
+        GameManager.gm.turnManager.addCurrentTurnAction(new TurnAction()
+        {
+            validation = () =>
+            {
+                bool result = !GameManager.gm.getPlayerSuccess;
+                Debug.Log("succes: " + result);
+                return result;
+            },
             action = turnAction
         });
     }
 
 
 
-    void turnAction()
+    public IEnumerator turnAction()
     {
-        if(!GameManager.gm.getPlayerSuccess){
-            attacker.Attack(GameManager.player.defender);
+        if (Random.Range(0, 2) > 0)
+            yield return attackPlayer();
+        else
+            yield return summonMob();
+
+        yield return null;
+    }
+
+
+    private IEnumerator attackPlayer()
+    {
+        var instance = Instantiate(sphere).GetComponent<Sphere>();
+
+        if (instance != null)
+        {
+            Vector3 playerPos = GameManager.player.transform.position;
+            Vector3 playerDirection = (playerPos - transform.position).normalized;
+            instance.transform.position = transform.position + playerDirection * 8;
+            Vector3 launchForce = ProjectileLauncher.CalculateLaunchForce(instance.transform.position, playerPos, 60f);
+            instance.launch(launchForce, attacker);
         }
+        yield return null;
+    }
+
+
+    private IEnumerator summonMob()
+    {
+        var instance = Instantiate(summon, spawnPoint);
+        instance.transform.position = spawnPoint.transform.position + spawnPoint.transform.forward * summonOffset;
+        summonOffset += 2f;
+        yield return null;
     }
     void Start()
     {
@@ -63,7 +109,6 @@ public class MobTest : MonoBehaviour
         {
             statusEffect.applyEffect(attack.element);
             health.takeDamage(attack.damage);
-            Debug.Log(health.health);
         };
 
 

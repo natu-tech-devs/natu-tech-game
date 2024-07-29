@@ -6,7 +6,7 @@ using UnityEngine;
 public class TurnManager
 {
     #region 
-    private List<Turn> turns = new();
+    private List<Turn> turns = new() { new Turn() };
     private int turnIndex = 0;
 
 
@@ -20,20 +20,23 @@ public class TurnManager
 
     public void playerSuccess()
     {
-        if (currentTurn != null)
-            currentTurn.playerSuccess = true;
+        if (currentTurn == null)
+            turns.Add(new Turn());
+        currentTurn.playerSuccess = true;
     }
 
 
-    public void startCurrentTurn()
+    public IEnumerator startCurrentTurn()
     {
-        Debug.Log("Start Current Turn");
-        if(currentTurn == null) {
+        Debug.Log("Start Current Turn: " + turnIndex);
+        if (currentTurn == null)
+        {
             fillTurns(turnIndex);
         }
-        currentTurn?.startTurn(() =>
+        yield return currentTurn?.startTurn(() =>
         {
-            if(turns.Count < turnIndex++){
+            if (turns.Count < turnIndex++)
+            {
                 turns.Add(new Turn());
             }
         });

@@ -13,10 +13,12 @@ public class Turn
     public bool playerSuccess = false;
 
 
-    public void startTurn(Action onEnd = null)
+    public IEnumerator startTurn(Action onEnd = null)
     {
         Debug.Log("Start Turn");
-        actions.ForEach((action) => action.takeAction());
+        for(int i = 0; i < actions.Count; i++){
+            yield return actions[i].takeAction();
+        }
         if (onEnd != null)
         {
             onEnd();
