@@ -3,12 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class TurnAction 
 {
     public Func<bool> validation = () => true;
-    public Action  action;
+    public Func<IEnumerator> action;
 
-    public void takeAction(){
-        if(validation()) action();
+    public IEnumerator takeAction(){
+        if(validation()) yield return action();
     }
 }

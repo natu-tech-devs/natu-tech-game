@@ -29,21 +29,26 @@ public class GameManager : MonoBehaviour
 
     public void endPlayerTurn()
     {
-        if(!turnManager.getPlayerSuccess && playerFailure != null){
+        if (!turnManager.getPlayerSuccess && playerFailure != null)
+        {
             playerFailure();
         }
-        startTurn();
+        var coroutine = StartCoroutine(startTurn());
     }
 
-    public void playerSuccess(){
+    public void playerSuccess()
+    {
+        Debug.Log("Player Success!!!!");
         turnManager.playerSuccess();
     }
 
-    private void startTurn()
+    private IEnumerator startTurn(Action endTurn = null)
     {
 
         if (turnPrep != null)
             turnPrep();
-        turnManager.startCurrentTurn();
+        yield return turnManager.startCurrentTurn();
+
+        if(endTurn != null) endTurn();
     }
 }

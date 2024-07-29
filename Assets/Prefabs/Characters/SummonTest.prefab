@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8598220941913724521
+--- !u!1 &1149540826104604203
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,52 +8,51 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8308143784284911843}
-  - component: {fileID: 3617717637636938743}
-  - component: {fileID: 3564952474355194703}
-  - component: {fileID: 2633575179299581353}
-  - component: {fileID: 5111538272877003241}
-  - component: {fileID: 5269906603824436176}
-  - component: {fileID: 2927022052287275938}
-  - component: {fileID: 5376936718283101795}
-  - component: {fileID: 342413249398266918}
+  - component: {fileID: 1185957659816098018}
+  - component: {fileID: 6337766416489432913}
+  - component: {fileID: 3386345294381473999}
+  - component: {fileID: 8307513401263918107}
+  - component: {fileID: 4195049362924497068}
+  - component: {fileID: 935600985253389936}
+  - component: {fileID: 2302295338421818957}
+  - component: {fileID: 5946496580542181164}
   m_Layer: 0
-  m_Name: MobTest
+  m_Name: SummonTest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8308143784284911843
+--- !u!4 &1185957659816098018
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8598220941913724521}
+  m_GameObject: {fileID: 1149540826104604203}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.904106, y: 2.4, z: -3.0203533}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &3617717637636938743
+--- !u!33 &6337766416489432913
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8598220941913724521}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &3564952474355194703
+  m_GameObject: {fileID: 1149540826104604203}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &3386345294381473999
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8598220941913724521}
+  m_GameObject: {fileID: 1149540826104604203}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -89,13 +88,13 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2633575179299581353
-BoxCollider:
+--- !u!136 &8307513401263918107
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8598220941913724521}
+  m_GameObject: {fileID: 1149540826104604203}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -107,31 +106,31 @@ BoxCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5111538272877003241
+--- !u!114 &4195049362924497068
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8598220941913724521}
+  m_GameObject: {fileID: 1149540826104604203}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 955088a428684884f830fbe30e557a9f, type: 3}
+  m_Script: {fileID: 11500000, guid: 8b01b50e76dd28d47b657d1eb328823e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  summon: {fileID: 1149540826104604203, guid: 041caa19c5d17514481c7c2cc6acfd55, type: 3}
-  spawnPoint: {fileID: 0}
   sphere: {fileID: 532968164907516632, guid: 267e70b98a8f49e4988d148a869dc2bd, type: 3}
---- !u!114 &5269906603824436176
+--- !u!114 &935600985253389936
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8598220941913724521}
+  m_GameObject: {fileID: 1149540826104604203}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2517ad47dfaf74f44bbb3386b57307c2, type: 3}
@@ -140,44 +139,30 @@ MonoBehaviour:
   onDeath:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &2927022052287275938
+--- !u!114 &2302295338421818957
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8598220941913724521}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34bee63ce8a8bde4584ca8baa33f3f30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  defenseMultiplier: 1
-  attackMultiplier: 1
---- !u!114 &5376936718283101795
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8598220941913724521}
+  m_GameObject: {fileID: 1149540826104604203}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9fe8d6dae2091f2499db49a7d5cb88ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   attack:
-    damage: 1
-    type: 1
-    element: 1
+    damage: 0
+    type: 0
+    element: 0
   attackRatio: 1
---- !u!114 &342413249398266918
+--- !u!114 &5946496580542181164
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8598220941913724521}
+  m_GameObject: {fileID: 1149540826104604203}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b74769326ed0fe4c871ceb3d0ed96ee, type: 3}
