@@ -5,6 +5,7 @@
   --primary-color-03: #F9F6BD;
 
   --font-display: resource('Fonts/Slackey/Slackey-Regular');
+  --font-body: resource('Fonts/Georama/static/Georama-Bold');
 
 }
 

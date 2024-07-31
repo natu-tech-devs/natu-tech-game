@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+
+    <Style src="project://database/Assets/UI/Resources/Components/Modals/LevelInformationModal/LevelInformationModal.uss" />
+
+    <ui:VisualElement name="modal-container" class="modal-container">
+        <ui:Label name="modal-title" text="Title" class="modal-title" />
+        <ui:VisualElement name="modal-content" class="modal-content">
+            <ui:VisualElement name="modal-image" class="modal-image" />
+            <ui:VisualElement name="modal-description" class="modal-description">
+                <ui:Label name="modal-description-text" text="Description" class="modal-description-text" />
+                <ui:VisualElement name="modal-controls" class="modal-controls" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+
+</ui:UXML>
