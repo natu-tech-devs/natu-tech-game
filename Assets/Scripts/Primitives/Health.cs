@@ -12,7 +12,7 @@ public class Health : MonoBehaviour
 
 
     [SerializeField]
-    public float health { get; private set; } = 100f;
+    public float health = 100f;
 
     public Action onDamage;
 
@@ -22,6 +22,8 @@ public class Health : MonoBehaviour
     public List<healthDelegate> damageCondigitons = new();
 
     public List<healthDelegate> healConditions = new();
+
+    public Action die;
 
 
     public void takeDamage(float damage)
@@ -34,7 +36,8 @@ public class Health : MonoBehaviour
         if (health <= 0)
         {
             health = 0;
-            die();
+            if (die != null)
+                die();
         }
     }
 
@@ -44,7 +47,7 @@ public class Health : MonoBehaviour
         health += value;
     }
 
-    public void die()
+    public void _die()
     {
         //prevent death,  List.Aggregate its like javascript Array.reduce
         if (!deathConditions.Aggregate(true, (acc, current) => acc && current(health, 0))) return;

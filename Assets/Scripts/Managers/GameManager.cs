@@ -51,4 +51,8 @@ public class GameManager : MonoBehaviour
 
         if(endTurn != null) endTurn();
     }
+
+    public void Lose(){
+        Debug.Log("You lose");
+    }
 }
