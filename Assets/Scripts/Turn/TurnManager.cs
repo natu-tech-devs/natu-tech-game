@@ -69,4 +69,12 @@ public class TurnManager
         turns[turnIndex + skipTurns - 1].addTurnAction(action);
     }
 
+    public void addTurnActionHelper(Func<IEnumerator> action, Func<bool> validator, object reference,int turnsAhead){
+        addTurnAction(new TurnAction(){
+            action = action,
+            validation = validator,
+            cleanUp = () => reference == null
+        },turnsAhead);
+    }
+
 }

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8849894304081986405}
   - component: {fileID: 7575998903499860215}
   - component: {fileID: 2871596178705644702}
+  - component: {fileID: 3419084002947144053}
   m_Layer: 0
   m_Name: WaterSphere
   m_TagString: Untagged
@@ -146,10 +147,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59f8bb12de3970f45a4263d3b2499540, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attacker: {fileID: 0}
+--- !u!114 &3419084002947144053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532968164907516632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fe8d6dae2091f2499db49a7d5cb88ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   attack:
-    damage: 15
+    damage: 0
     type: 1
     element: 1
-  onHit:
-    m_PersistentCalls:
-      m_Calls: []
+  attackRatio: 1

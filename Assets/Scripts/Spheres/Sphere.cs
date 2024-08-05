@@ -34,9 +34,8 @@ public class Sphere : MonoBehaviour
         }
     }
 
-    public void OnCollisionEnter(Collision collision)
+    public void hit(Defender defender)
     {
-        Defender defender = collision.gameObject.GetComponent<Defender>();
         if (defender != null && attacker != null)
         {
             if (onHit != null)
@@ -46,6 +45,19 @@ public class Sphere : MonoBehaviour
 
         if (defender != null)
             GameObject.Destroy(gameObject);
+
+    }
+
+    public void OnCollisionEnter(Collision collision)
+    {
+        Defender defender = collision.gameObject.GetComponent<Defender>();
+        if (defender != null) hit(defender);
+    }
+
+    public void OnTriggerEnter(Collider collider)
+    {
+        Defender defender = collider.gameObject.GetComponent<Defender>();
+        if (defender != null) hit(defender);
     }
 
     public void OnDestroy()
