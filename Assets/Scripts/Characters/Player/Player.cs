@@ -1,8 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using TreeEditor;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -17,14 +15,20 @@ public class Player : MonoBehaviour
     public Defender defender;
 
     public StatusEffect statusEffect;
-
     public GameObject sphere;
 
     private bool canAttack = true;
 
-
     [SerializeField]
-    private float launchForce = 1f;
+    private float launchForce = 10f;
+    [SerializeField]
+    private float trajectoryTimeStep = 0.1f;
+    [SerializeField]
+    private int trajectorySegmentCount = 30;
+    [SerializeField]
+    private GameObject pointPrefab;  // Prefab do ponto da trajetória
+    private List<GameObject> trajectoryPoints = new List<GameObject>();
+
     void Awake()
     {
         if (GameManager.player == null)
@@ -33,17 +37,6 @@ public class Player : MonoBehaviour
         }
 
         health = GetComponent<Health>();
-
-
-    }
-
-    public void testAction()
-    {
-    }
-
-    void turnPrep()
-    {
-        Debug.Log("player turn prep");
     }
 
     public void playerInputAction(InputAction.CallbackContext callbackContext)
@@ -52,24 +45,70 @@ public class Player : MonoBehaviour
         {
             sphereAttack();
         }
+        else if (callbackContext.canceled)
+        {
+            ClearTrajectory();  // Limpa a trajetória quando o botão é liberado
+        }
+        else if (callbackContext.started)
+        {
+            ShowTrajectory();
+        }
+    }
+
+    void ShowTrajectory()
+    {
+        ClearTrajectory();  // Limpa os pontos anteriores
+
+        Vector3 velocity = transform.forward * launchForce;
+        Vector3 currentPosition = transform.position + transform.forward * 2;
+
+        for (int i = 0; i < trajectorySegmentCount; i++)
+        {
+            // Instancia um ponto ao longo da trajetória
+            GameObject point = Instantiate(pointPrefab, currentPosition, Quaternion.identity);
+            trajectoryPoints.Add(point);
+
+            // Calcula a próxima posição baseada na física
+            currentPosition += velocity * trajectoryTimeStep;
+            velocity += Physics.gravity * trajectoryTimeStep;
+        }
+    }
+
+    void ClearTrajectory()
+    {
+        // Destroi todos os pontos anteriores da trajetória
+        foreach (var point in trajectoryPoints)
+        {
+            Destroy(point);
+        }
+        trajectoryPoints.Clear();
     }
 
     public void sphereAttack()
     {
         if (!canAttack) return;
-        Sphere instance = Instantiate(sphere).GetComponent<Sphere>();
+
+        ClearTrajectory();  // Limpa a trajetória ao arremessar
+        GameObject instance = Instantiate(sphere);
         if (instance)
         {
             canAttack = false;
             instance.transform.position = transform.position + transform.forward * 2;
-            instance.launch(transform.forward * launchForce, attacker, () =>
+            Rigidbody rb = instance.GetComponent<Rigidbody>();
+            rb.velocity = transform.forward * launchForce;
+
+            StartCoroutine(AttackCooldown(() =>
             {
                 canAttack = true;
                 GameManager.gm.endPlayerTurn();
-            },() => {
-                GameManager.gm.playerSuccess();
-            });
+            }));
         }
+    }
+
+    IEnumerator AttackCooldown(Action onComplete)
+    {
+        yield return new WaitForSeconds(1f); // Tempo de recarga do ataque
+        onComplete?.Invoke();
     }
 
     void Start()
@@ -93,4 +132,8 @@ public class Player : MonoBehaviour
         };
     }
 
+    void turnPrep()
+    {
+        Debug.Log("player turn prep");
+    }
 }

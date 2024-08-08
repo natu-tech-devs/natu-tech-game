@@ -11,7 +11,7 @@ public enum ElemetType
     CLOUD = WATER + FIRE,
     SAND = EARTH + AIR,
     MAGMA = FIRE + EARTH,
-    FOG = WATER + AIR,
+    ICE = WATER + AIR,
     BLAZE = FIRE + AIR,
     MUD = EARTH + WATER,
 }

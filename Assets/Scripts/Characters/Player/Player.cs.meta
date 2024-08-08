@@ -3,7 +3,14 @@ guid: c9b49cb0a3e5d324c82bc8aafa4871f2
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - health: {instanceID: 0}
+  - attacker: {instanceID: 0}
+  - defender: {instanceID: 0}
+  - statusEffect: {instanceID: 0}
+  - sphere: {instanceID: 0}
+  - pointPrefab: {fileID: 532968164907516632, guid: 267e70b98a8f49e4988d148a869dc2bd,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
