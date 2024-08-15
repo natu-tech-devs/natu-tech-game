@@ -1,4 +1,4 @@
-<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" editor-extension-mode="False">
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" editor-extension-mode="False" style="width:1080px; height:1920px;">
     <Style src="project://database/Assets/UI/Resources/Screens/LevelsMenuScreen/LevelsMenuScreen.uss?fileID=7433441132597879392&amp;guid=377f5bf6a39924c45b07f79216d19856&amp;type=3#LevelsMenuScreen" />
     <ui:VisualElement name="container" class="container" />
 </ui:UXML>
