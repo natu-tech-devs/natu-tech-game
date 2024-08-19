@@ -12,6 +12,8 @@ public class TurnAction
 
     public Func<bool> cleanUp = () => false;
 
+    public float waitingTime = 1f;
+
     public IEnumerator takeAction(){
         if(cleanUp()) {
             action = null;
@@ -19,5 +21,6 @@ public class TurnAction
             yield return null;
         }
         if(validation !=null && validation()) yield return action();
+        yield return new WaitForSeconds(waitingTime);
     }
 }

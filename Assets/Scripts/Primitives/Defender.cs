@@ -8,4 +8,6 @@ public class Defender : MonoBehaviour
 {
     public float defenseRatio = 1;
     public onAttack onAttack;
+
+    //TODO grace time
 }
