@@ -63,10 +63,11 @@ public class TurnManager
 
     }
 
-    public void addTurnAction(TurnAction action, int skipTurns = 0)
+    public TurnAction addTurnAction(TurnAction action, int skipTurns = 0)
     {
         fillTurns(skipTurns);
-        turns[turnIndex + skipTurns - 1].addTurnAction(action);
+        turns[turnIndex + skipTurns].addTurnAction(action);
+        return action;
     }
 
     public void addTurnActionHelper(Func<IEnumerator> action, Func<bool> validator, object reference,int turnsAhead){

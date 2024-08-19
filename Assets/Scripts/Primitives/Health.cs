@@ -17,6 +17,7 @@ public class Health : MonoBehaviour
     public Action onDamage;
 
     public UnityEvent onDeath;
+    public Action onDeathEvent;
 
     public List<healthDelegate> deathConditions = new();
     public List<healthDelegate> damageCondigitons = new();

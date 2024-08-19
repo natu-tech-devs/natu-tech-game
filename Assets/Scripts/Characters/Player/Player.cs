@@ -12,15 +12,21 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(Defender))]
 public class Player : MonoBehaviour
 {
+    [HideInInspector]
     public Health health;
+    [HideInInspector]
     public Attacker attacker;
+    [HideInInspector]
     public Defender defender;
 
+    [HideInInspector]
     public StatusEffect statusEffect;
 
     public GameObject sphere;
 
-    private bool canAttack = true;
+    public bool attacked = false;
+
+    private Func<bool> canAttack = () => GameManager.gm.isPlayerTurn;
 
 
     [SerializeField]
@@ -43,6 +49,7 @@ public class Player : MonoBehaviour
 
     void turnPrep()
     {
+        attacked = false;
         Debug.Log("player turn prep");
     }
 
@@ -56,17 +63,17 @@ public class Player : MonoBehaviour
 
     public void sphereAttack()
     {
-        if (!canAttack) return;
+        if (!canAttack() || attacked) return;
         Sphere instance = Instantiate(sphere).GetComponent<Sphere>();
         if (instance)
         {
-            canAttack = false;
+            attacked = true;
             instance.transform.position = transform.position + transform.forward * 2;
             instance.launch(transform.forward * launchForce, attacker, () =>
             {
-                canAttack = true;
                 GameManager.gm.endPlayerTurn();
-            },() => {
+            }, () =>
+            {
                 GameManager.gm.playerSuccess();
             });
         }
