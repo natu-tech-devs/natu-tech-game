@@ -15,7 +15,6 @@ public class Turn
 
     public IEnumerator startTurn(Action onEnd = null)
     {
-        Debug.Log("Start Turn");
         for(int i = 0; i < actions.Count; i++){
             yield return actions[i].takeAction();
         }

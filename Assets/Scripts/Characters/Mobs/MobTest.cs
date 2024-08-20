@@ -105,7 +105,7 @@ public class MobTest : MonoBehaviour
         statusEffect.onEffects += onEffect;
 
 
-        defender.onAttack += (Attack attack) =>
+        defender.onAttack += (Attack attack, AgentSide agentSide) =>
         {
             statusEffect.applyEffect(attack.element);
             health.takeDamage(attack.damage);

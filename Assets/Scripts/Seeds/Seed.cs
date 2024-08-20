@@ -23,8 +23,10 @@ public class Seed : MonoBehaviour
         health.die += die;
     }
 
-    private void prep(){
-        GameManager.seeds.Add(gameObject);
+    private void prep()
+    {
+        if (gameObject != null)
+            GameManager.seeds.Add(gameObject);
     }
 
     private void die()
@@ -34,7 +36,7 @@ public class Seed : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private void onAttack(Attack attack)
+    private void onAttack(Attack attack, AgentSide agentSide)
     {
         health.takeDamage(attack.damage);
     }

@@ -61,7 +61,6 @@ public class GameManager : MonoBehaviour
 
     public void playerSuccess()
     {
-        Debug.Log("Player Success!!!!");
         turnManager.playerSuccess();
     }
 

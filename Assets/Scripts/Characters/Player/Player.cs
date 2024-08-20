@@ -6,6 +6,14 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+[Serializable]
+public struct PlayerSpheres {
+    public GameObject waterSphere;
+    public GameObject fireSphere;
+    public GameObject airShpere;
+    public GameObject earthSphere;
+}
+
 [RequireComponent(typeof(Health))]
 [RequireComponent(typeof(StatusEffect))]
 [RequireComponent(typeof(Attacker))]
@@ -21,6 +29,9 @@ public class Player : MonoBehaviour
 
     [HideInInspector]
     public StatusEffect statusEffect;
+
+    [SerializeField]
+    private PlayerSpheres playerSpheres = new();
 
     public GameObject sphere;
 
@@ -50,7 +61,6 @@ public class Player : MonoBehaviour
     void turnPrep()
     {
         attacked = false;
-        Debug.Log("player turn prep");
     }
 
     public void playerInputAction(InputAction.CallbackContext callbackContext)
@@ -88,7 +98,7 @@ public class Player : MonoBehaviour
         defender = GetComponent<Defender>();
         statusEffect = GetComponent<StatusEffect>();
 
-        defender.onAttack += (Attack attack) =>
+        defender.onAttack += (Attack attack, AgentSide agentSide) =>
         {
             Debug.Log("Player defense");
             health.takeDamage(attack.damage);

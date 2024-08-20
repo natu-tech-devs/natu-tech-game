@@ -165,3 +165,6 @@ MonoBehaviour:
     type: 1
     element: 1
   attackRatio: 1
+  attackSpeed: 1
+  attackTime: 0
+  agentSide: 0
