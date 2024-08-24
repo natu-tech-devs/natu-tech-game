@@ -33,7 +33,7 @@ public class Truck : MonoBehaviour
 
 
 
-        defender.onAttack += (Attack attack) => health.takeDamage(attack.damage);
+        defender.onAttack += (Attack attack, AgentSide agentSide) => health.takeDamage(attack.damage);
 
         GameManager.gm.turnPrep += prep;
 
@@ -43,7 +43,6 @@ public class Truck : MonoBehaviour
 
     private void prep()
     {
-        Debug.Log("Truck prep: " + state);
         if (state == AgentState.IDLE)
         {
             state = AgentState.ATTACKING;
@@ -94,9 +93,7 @@ private IEnumerator attackNearSeed(){
     GameObject seed = GameManager.gm.nearSeed(transform.position);
     if(seed == null) yield break;
     Transform seedTransform = seed.transform;
-    Debug.Log("Truck attacking at posion: " + seedTransform.position);
     yield return begginAttack(seedTransform);
-    Debug.Log("End of Truck action");
 }
 
     private IEnumerator begginAttack(Transform _transform)
@@ -115,7 +112,6 @@ private IEnumerator attackNearSeed(){
 
     public void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("Truck collision");
         Defender defender = collision.gameObject.GetComponent<Defender>();
         if (defender != null)
         {
@@ -126,7 +122,6 @@ private IEnumerator attackNearSeed(){
 
     public void OnTriggerEnter(Collider collider)
     {
-        Debug.Log("Truck collision");
         Defender defender = collider.gameObject.GetComponent<Defender>();
         if (defender != null)
         {

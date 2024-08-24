@@ -15,7 +15,7 @@ public class StatusEffect : MonoBehaviour
 
 
     [SerializeField]
-    public ElemetType currentElement { get; private set; } = ElemetType.WATER;
+    public ElemetType currentElement = ElemetType.NEUTRAL;
 
     public void applyEffect(ElemetType elemetType)
     {

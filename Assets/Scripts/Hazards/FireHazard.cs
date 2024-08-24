@@ -53,11 +53,10 @@ public class FireHazard : MonoBehaviour
         return this != null;
     }
 
-    private void onAttack(Attack attack)
+    private void onAttack(Attack attack,AgentSide agentSide = AgentSide.NEUTRAL)
     {
         if (attack.element == ElemetType.WATER)
         {
-            Debug.Log("Tomei");
             health.takeDamage(attack.damage);
         }
     }

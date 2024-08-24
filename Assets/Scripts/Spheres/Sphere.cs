@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.Events;
 
 [RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(Sphere))]
 public class Sphere : MonoBehaviour
 {
 
@@ -12,12 +13,21 @@ public class Sphere : MonoBehaviour
 
     public Attacker attacker;
 
+    private Attacker launchAttack;
+
     public new Rigidbody rigidbody => GetComponent<Rigidbody>();
 
     public Action onDestroyAction;
 
+    [SerializeField]
+    private GameObject allySphereEffect;
+    [SerializeField]
+    private GameObject enemySphereEffect;
+
+
     IEnumerator Start()
     {
+        attacker = GetComponent<Attacker>();
         yield return new WaitForSeconds(4);
         if (gameObject)
             GameObject.Destroy(gameObject);
@@ -25,7 +35,6 @@ public class Sphere : MonoBehaviour
 
     public void launch(Vector3 force, Attacker attacker, Action callback = null, Action onHit = null)
     {
-        this.attacker = attacker;
         rigidbody.AddForce(force, ForceMode.VelocityChange);
         if (callback != null)
         {
@@ -34,15 +43,41 @@ public class Sphere : MonoBehaviour
         }
     }
 
+    private void handleAllyEffect(Attacker attacker, Defender defender)
+    {
+        if (allySphereEffect != null)
+            Instantiate(allySphereEffect,defender.transform.position,Quaternion.identity);
+    }
+
+    private void handleEnemyEffect(Attacker attacker, Defender defender)
+    {
+        attacker.Attack(defender);
+        if (enemySphereEffect != null)
+            Instantiate(enemySphereEffect,defender.transform.position,Quaternion.identity);
+    }
+
     public void hit(Defender defender)
     {
-        if (defender != null && attacker != null)
+
+        if (defender != null)
         {
+            
+            var localAttacker = launchAttack != null ? launchAttack : attacker;
             if (onHit != null)
                 onHit();
-            attacker.Attack(defender);
-        }
 
+            if (localAttacker != null)
+            {
+                if (localAttacker.agentSide != defender.agentSide)
+                {
+                    handleEnemyEffect(localAttacker, defender);
+                }
+                else
+                {
+                    handleAllyEffect(localAttacker, defender);
+                }
+            }
+        }
         if (defender != null)
             GameObject.Destroy(gameObject);
 

@@ -472,7 +472,7 @@ Transform:
   m_GameObject: {fileID: 463683760}
   serializedVersion: 2
   m_LocalRotation: {x: 0.13538003, y: -0, z: -0, w: 0.99079376}
-  m_LocalPosition: {x: 0, y: 4.2, z: -10}
+  m_LocalPosition: {x: -6.18, y: 2.54, z: -10.74}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -879,6 +879,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1197546645338490665, guid: 664f3ebb6fbd18b4396dde5bdeb05b8c,
+        type: 3}
+      propertyPath: sphere
+      value: 
+      objectReference: {fileID: 532968164907516632, guid: 5d1cbafb1ae94a243b0dd6e76f1115a4,
+        type: 3}
     - target: {fileID: 8536249155213787420, guid: 664f3ebb6fbd18b4396dde5bdeb05b8c,
         type: 3}
       propertyPath: m_Name
@@ -1175,11 +1181,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Truck
-      objectReference: {fileID: 0}
-    - target: {fileID: 8659168815083160875, guid: b512056d97fb01446b34729c045ea400,
-        type: 3}
-      propertyPath: speed
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -12,18 +12,22 @@ public class Attacker : MonoBehaviour
     public float attackSpeed = 1f;
     public float attackTime = 0f;
 
+    public AgentSide agentSide = AgentSide.NEUTRAL;
+
 
 
     public void Attack(Defender defender)
     {
         attackTime = Time.time;
         if (defender.onAttack != null)
-            defender.onAttack(this.attack * attackRatio);
+            defender.onAttack(this.attack * attackRatio, agentSide);
     }
 
-    public IEnumerator asyncAttack(Defender defender){
-        if(attackTime <= 1 / attackSpeed){
-            yield return new WaitForSeconds((1/ attackSpeed)  -  attackTime);
+    public IEnumerator asyncAttack(Defender defender)
+    {
+        if (attackTime <= 1 / attackSpeed)
+        {
+            yield return new WaitForSeconds((1 / attackSpeed) - attackTime);
             Attack(defender);
         }
         yield return new WaitForFixedUpdate();

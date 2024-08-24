@@ -28,7 +28,6 @@ public class TurnManager
 
     public IEnumerator startCurrentTurn()
     {
-        Debug.Log("Start Current Turn: " + turnIndex);
         if (currentTurn == null)
         {
             fillTurns(turnIndex);
