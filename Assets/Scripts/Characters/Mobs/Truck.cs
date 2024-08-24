@@ -6,11 +6,13 @@ using UnityEngine;
 [RequireComponent(typeof(Defender))]
 [RequireComponent(typeof(Attacker))]
 [RequireComponent(typeof(Collider))]
+[RequireComponent(typeof(StatusEffect))]
 public class Truck : MonoBehaviour
 {
     private Health health;
     private Defender defender;
     private Attacker attacker;
+    private StatusEffect statusEffect;
 
 
     [SerializeField]
@@ -30,19 +32,20 @@ public class Truck : MonoBehaviour
         health = GetComponent<Health>();
         defender = GetComponent<Defender>();
         attacker = GetComponent<Attacker>();
+        statusEffect = GetComponent<StatusEffect>();
 
-
+        statusEffect.init(health);
 
         defender.onAttack += (Attack attack, AgentSide agentSide) => health.takeDamage(attack.damage);
 
         GameManager.gm.turnPrep += prep;
 
         originalPosition = transform.position;
-
     }
 
     private void prep()
     {
+        statusEffect.handleStatuses();
         if (state == AgentState.IDLE)
         {
             state = AgentState.ATTACKING;

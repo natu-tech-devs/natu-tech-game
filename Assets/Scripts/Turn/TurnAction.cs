@@ -21,6 +21,7 @@ public class TurnAction
             yield return null;
         }
         if(validation !=null && validation()) yield return action();
+        else yield break;//dont await for end of action if validation dont pass
         yield return new WaitForSeconds(waitingTime);
     }
 }
