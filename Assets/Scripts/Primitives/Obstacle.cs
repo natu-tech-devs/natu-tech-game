@@ -12,19 +12,6 @@ public class Obstacle : MonoBehaviour
     [SerializeField]
     private int timeSpan = 3;
 
-    void Start()
-    {
-        if(hasTimeSpan){
-            GameManager.gm.turnManager.addTurnAction(new TurnAction() {
-                action = die,
-                validation = () => this != null,
-            },timeSpan);
-        }
-    }
 
-    private IEnumerator die(){
-        Destroy(gameObject);
-        yield return null;
-    }
 
 }

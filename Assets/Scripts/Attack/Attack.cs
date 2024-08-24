@@ -11,6 +11,7 @@ public struct Attack
     public AttackType type;
     [SerializeField]
     public ElemetType element;
+    [SerializeField]
 
     public static Attack operator *(Attack attack, int attackMultiplier)
     {
