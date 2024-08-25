@@ -1,0 +1,3 @@
+enum AgentState {
+    IDLE,ATTACKING,MOVING,DEFENDING,STUNNED
+}
