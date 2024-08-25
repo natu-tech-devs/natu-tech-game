@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Resources/Screens/ChooseCharacterScene/ChooseCharacter.uss?fileID=7433441132597879392&amp;guid=3fd320dd956649d4ca7fe57eb71fb467&amp;type=3#ChooseCharacter" />
+    <ui:VisualElement name="container" class="container">
+        <ui:VisualElement name="wrapper" class="wrapper" style="flex-grow: 1;">
+            <ui:VisualElement name="header" class="header">
+                <ui:Label name="title" text="PERSONAGENS" class="title" />
+            </ui:VisualElement>
+            <ui:VisualElement name="content" class="content">
+                <ui:Button name="character-1" class="character character-1" />
+                <ui:Button name="character-2" class="character character-2" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
