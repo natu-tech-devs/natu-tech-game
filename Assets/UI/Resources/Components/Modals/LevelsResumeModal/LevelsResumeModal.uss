@@ -1,0 +1,47 @@
+@import url("project://database/Assets/UI/Resources/GlobalStyles/GlobalStyles.uss?fileID=7433441132597879392&guid=55b51d087ab63184aa220d3790e30de0&type=3#GlobalStyles");
+
+.modal-container {
+    width: 100%;
+    height: 100%;
+    background-image: none;
+    padding: 48px 62px 48px 62px;
+    -unity-background-scale-mode: stretch-to-fill;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.8);
+    
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    display: none;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+    scale: 0.75;
+}
+
+.open {
+    display: flex;
+    opacity: 1;
+    scale: 1;
+}
+
+.level-buttons-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 900px;
+    width: 100%;
+}

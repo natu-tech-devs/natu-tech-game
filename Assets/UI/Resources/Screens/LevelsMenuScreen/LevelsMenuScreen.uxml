@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Resources/Screens/LevelsMenuScreen/LevelsMenuScreen.uss?fileID=7433441132597879392&amp;guid=377f5bf6a39924c45b07f79216d19856&amp;type=3#LevelsMenuScreen" />
+    <ui:VisualElement name="levels-screen-container" class="levels-screen-container">
+        <ui:VisualElement name="levels-screen-buttons" class="levels-screen-buttons">
+            <ui:Button name="star-button" class="levels-screen-button star-button" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

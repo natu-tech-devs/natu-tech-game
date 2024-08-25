@@ -1,0 +1,41 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Resources/Components/Modals/CharacterInformationModal/CharacterInformationModal.uss?fileID=7433441132597879392&amp;guid=7c639ea8e4c647c4c896caa591928c71&amp;type=3#CharacterInformationModal" />
+    <ui:VisualElement name="modal-container" class="modal-container">
+        <ui:VisualElement name="modal-wrapper" class="modal-wrapper" style="flex-grow: 1;">
+            <ui:VisualElement name="modal-left-area" class="modal-left-area">
+                <ui:VisualElement name="character-title" class="character-title" style="flex-grow: 1;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="modal-right-area" class="modal-right-area">
+                <ui:Label name="character-description" text="Guardião com a missão de proteger as matas nativas e biomas do parque. Luta contra as forças destrutivas das indústrias que..." class="character-description" />
+                <ui:VisualElement name="character-stats" class="character-stats">
+
+                    <ui:VisualElement name="decorator-top" class="decorator-top" />
+
+                    <ui:VisualElement name="stat-strength" class="stat" style="flex-grow: 1;">
+                        <ui:Label tabindex="-1" text="Força" parse-escape-sequences="true" display-tooltip-when-elided="true" name="stat-label" class="stat-label" />
+                        <ui:VisualElement name="stat-dots" class="stat-dots" style="flex-grow: 1;">
+                            <!-- <ui:VisualElement name="stat-dot" class="stat-dot" style="flex-grow: 1;" /> -->
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+
+                    <ui:VisualElement name="stat-healing" class="stat" style="flex-grow: 1;">
+                        <ui:Label tabindex="-1" text="Cura" parse-escape-sequences="true" display-tooltip-when-elided="true" name="stat-label" class="stat-label" />
+                        <ui:VisualElement name="stat-dots" class="stat-dots" style="flex-grow: 1;">
+                            <!-- <ui:VisualElement name="stat-dot" class="stat-dot" style="flex-grow: 1;" /> -->
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+
+                    <ui:VisualElement name="stat-defense" class="stat" style="flex-grow: 1;">
+                        <ui:Label tabindex="-1" text="Defesa" parse-escape-sequences="true" display-tooltip-when-elided="true" name="stat-label" class="stat-label" />
+                        <ui:VisualElement name="stat-dots" class="stat-dots" style="flex-grow: 1;">
+                            <!-- <ui:VisualElement name="stat-dot" class="stat-dot" style="flex-grow: 1;" /> -->
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+
+                    <ui:VisualElement name="decorator-bottom" class="decorator-bottom" />
+                </ui:VisualElement>
+                <ui:VisualElement name="modal-controls" class="modal-controls" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

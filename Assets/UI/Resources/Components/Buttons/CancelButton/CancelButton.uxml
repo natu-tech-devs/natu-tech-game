@@ -1,4 +1,18 @@
-<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/UI/Resources/Components/Buttons/CancelButton/CancelButton.uss?fileID=7433441132597879392&amp;guid=24612768ee2393c4891c0099f31695c5&amp;type=3#CancelButton" />
-    <ui:Button text="VOLTAR" name="cancel-button" parse-escape-sequences="true" display-tooltip-when-elided="true" class="cancel-button" />
+<ui:UXML 
+    xmlns:ui="UnityEngine.UIElements" 
+    xmlns:uie="UnityEditor.UIElements" 
+    xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    engine="UnityEngine.UIElements" 
+    editor="UnityEditor.UIElements" 
+    noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" 
+    editor-extension-mode="False">
+
+    <Style src="project://database/Assets/UI/Resources/Components/Buttons/CancelButton/CancelButton.uss" />
+
+    <ui:Button name="cancel-button" class="cancel-button" >
+        <ui:Label name="cancel-button-label" text="cancelar" class="cancel-button-label" />
+        <ui:VisualElement name="cancel-button-icon" class="cancel-button-icon" />
+    </ui:Button>
+
 </ui:UXML>
+

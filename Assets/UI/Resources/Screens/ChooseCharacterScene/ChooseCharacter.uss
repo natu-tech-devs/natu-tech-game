@@ -1,0 +1,52 @@
+@import url("project://database/Assets/UI/Resources/GlobalStyles/GlobalStyles.uss?fileID=7433441132597879392&guid=55b51d087ab63184aa220d3790e30de0&type=3#GlobalStyles");
+.container {
+    width: 100%;
+    height: 100%;
+    background-image: resource('Images/General/acessibility-background');
+    align-items: center;
+}
+
+.header {
+    background-image: resource('Images/General/wood-with-shadow');
+    padding-bottom: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin: 0 auto;
+    margin-bottom: 8px;
+}
+
+.character {
+    background-color: rgba(0, 0, 0, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    width: 480px;
+    height: 480px;
+    transition-property: scale;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in-out;
+}
+
+.character-1 {
+    background-image: resource('Images/Characters/character-1-button');
+}
+
+.character-2 {
+    background-image: resource('Images/Characters/character-2-button');
+}
+
+.content {
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapper {
+    align-items: center;
+    justify-content: center;
+}
+
+.character:active {
+    scale: 1.1 1.1;
+}

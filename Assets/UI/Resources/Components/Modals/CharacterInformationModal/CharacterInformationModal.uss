@@ -1,0 +1,127 @@
+@import url("project://database/Assets/UI/Resources/GlobalStyles/GlobalStyles.uss?fileID=7433441132597879392&guid=55b51d087ab63184aa220d3790e30de0&type=3#GlobalStyles");
+.modal-container {
+    width: 100%;
+    height: 100%;
+    background-image: resource('Images/General/acessibility-background');
+    padding: 48px 62px 48px 62px;
+    -unity-background-scale-mode: stretch-to-fill;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    display: none;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+    scale: 0.75;
+}
+
+.open {
+    display: flex;
+    opacity: 1;
+    scale: 1;
+}
+
+.character-description {
+    -unity-font: var(--font-body);
+    -unity-font-definition: initial;
+    color: var(--primary-color-01);
+    white-space: normal;
+    text-overflow: clip;
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+
+.character-title {
+    background-image: resource('Images/General/character-2-name');
+    width: 280px;
+    height: 140px;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.modal-wrapper {
+    flex-direction: row;
+    align-items: center;
+    max-width: 100%;
+    justify-content: center;
+}
+
+.modal-left-area {
+    flex-basis: 33.3%;
+    align-self: flex-start;
+}
+
+.modal-right-area {
+    flex-basis: 66.6%;
+}
+
+.decorator-top {
+    background-image: resource('Images/General/separator-top');
+    width: 680px;
+    height: 100px;
+    -unity-background-scale-mode: stretch-to-fill;
+    margin-bottom: 16px;
+}
+
+.decorator-bottom {
+    background-image: resource('Images/General/separator');
+    width: 680px;
+    height: 10px;
+    -unity-background-scale-mode: stretch-to-fill;
+    margin-top: 16px;
+}
+
+.stat {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: auto;
+}
+
+.stat-label {
+    -unity-font: var(--font-display);
+    -unity-font-definition: initial;
+    color: var(--primary-color-02);
+    font-size: 32px;
+    flex-basis: 35%;
+    -unity-text-align: upper-right;
+    margin-right: 52px;
+}
+
+.stat-dot {
+    background-image: resource('Images/General/dot-icon');
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    -unity-background-scale-mode: scale-to-fit;
+    min-width: auto;
+    min-height: auto;
+    max-width: 40px;
+    max-height: 40px;
+    margin-right: 8px;
+}
+
+.stat-dots {
+    flex-basis: 65%;
+    flex-direction: row;
+    align-items: center;
+}
+
+.modal-controls {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+}
