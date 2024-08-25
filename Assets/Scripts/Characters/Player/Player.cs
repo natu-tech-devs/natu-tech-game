@@ -41,15 +41,15 @@ public class Player : MonoBehaviour
 
     public void playerInputAction(InputAction.CallbackContext callbackContext)
     {
-        if (callbackContext.performed)
+        if (callbackContext.performed && canAttack)
         {
-            sphereAttack();
+            ShowTrajectory();
         }
         else if (callbackContext.canceled)
-        {
-            ClearTrajectory();  // Limpa a trajetória quando o botão é liberado
+        {sphereAttack();
+             // Limpa a trajetória quando o botão é liberado
         }
-        else if (callbackContext.started)
+        else if (callbackContext.started && canAttack)
         {
             ShowTrajectory();
         }
@@ -87,21 +87,22 @@ public class Player : MonoBehaviour
     public void sphereAttack()
     {
         if (!canAttack) return;
+        ClearTrajectory();  
 
-        ClearTrajectory();  // Limpa a trajetória ao arremessar
-        GameObject instance = Instantiate(sphere);
+        Sphere instance = Instantiate(sphere).GetComponent<Sphere>();
         if (instance)
         {
             canAttack = false;
             instance.transform.position = transform.position + transform.forward * 2;
-            Rigidbody rb = instance.GetComponent<Rigidbody>();
-            rb.velocity = transform.forward * launchForce;
-
-            StartCoroutine(AttackCooldown(() =>
+            instance.launch(transform.forward * launchForce, attacker,()=>
             {
                 canAttack = true;
                 GameManager.gm.endPlayerTurn();
-            }));
+            },()=>{
+GameManager.gm.playerSuccess();
+            });
+
+          
         }
     }
 
