@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Resources/Components/Buttons/LevelButton/LevelButton.uss?fileID=7433441132597879392&amp;guid=206343a16db7d2646912844371e3dc26&amp;type=3#LevelButton" />
+    <ui:Button name="level-button" class="level-button">
+        <ui:Label name="level-button-text" text="1" class="level-button-text" />
+        <ui:VisualElement name="lock-icon" class="lock-icon" style="flex-grow: 1;" />
+        <ui:VisualElement name="stars" class="stars" style="flex-grow: 1;">
+            <ui:VisualElement name="star" class="star-unfilled left" style="flex-grow: 1;" />
+            <ui:VisualElement name="star" class="star-unfilled" style="flex-grow: 1;" />
+            <ui:VisualElement name="star" class="star-unfilled right" style="flex-grow: 1;" />
+        </ui:VisualElement>
+    </ui:Button>
+</ui:UXML>

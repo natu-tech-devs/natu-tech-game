@@ -122,143 +122,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &3613011
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3613012}
-  - component: {fileID: 3613016}
-  - component: {fileID: 3613015}
-  - component: {fileID: 3613014}
-  - component: {fileID: 3613013}
-  m_Layer: 5
-  m_Name: TopButtonRight
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &3613012
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3613011}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1940203992}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 232, y: -46}
-  m_SizeDelta: {x: 60, y: 60}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &3613013
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3613011}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08a6b01d2b2a6b84eb2f0b90af0edb6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stageName: Fase 1
-  tooltipManager: {fileID: 696310343}
-  holdTime: 1
-  button: {fileID: 0}
---- !u!114 &3613014
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3613011}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 2
-  m_Colors:
-    m_NormalColor: {r: 1, g: 0, b: 0.059999466, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 21300000, guid: afb9ba320c38f384cab80e1246906848, type: 3}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 0
-  m_TargetGraphic: {fileID: 3613015}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &3613015
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3613011}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4f7b73c43041de44d8c5b22b21adcac7, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &3613016
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3613011}
-  m_CullTransparentMesh: 1
 --- !u!1 &5365996
 GameObject:
   m_ObjectHideFlags: 0
@@ -310,8 +173,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08a6b01d2b2a6b84eb2f0b90af0edb6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageName: Fase 1
+  levelTitle: "DESAFIO NO PO\xC7O DO PARED\xC3O"
+  description: "O Po\xE7o do Pared\xE3o \xE9 famoso por suas \xE1guas cristalinas
+    e uma grande rocha que se ergue ao lado, criando um pared\xE3o natural. Esse
+    pared\xE3o \xE9 utilizado pelos visitantes para saltos na \xE1gua, tornando-se
+    um ponto de aventura e divers\xE3o. Al\xE9m disso, a rocha serve como habitat
+    para diversas esp\xE9cies de musgos e l\xEDquens, que ajudam a manter a qualidade
+    da \xE1gua, filtrando impurezas e mantendo o ecossistema local equilibrado. "
   tooltipManager: {fileID: 696310343}
+  modalManager: {fileID: 889395613}
   holdTime: 1
   button: {fileID: 0}
 --- !u!114 &5365999
@@ -432,7 +302,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -449.6, y: -213.6}
+  m_AnchoredPosition: {x: -432, y: -214}
   m_SizeDelta: {x: 60, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &50526123
@@ -447,8 +317,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08a6b01d2b2a6b84eb2f0b90af0edb6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageName: Fase 1
+  levelTitle: "RESGATE NO PO\xC7O DA PAIX\xC3O"
+  description: "O Po\xE7o da Paix\xE3o \xE9 um dos mais visitados do Parque Municipal,
+    localizado pr\xF3ximo \xE0 entrada principal. \xC9 famoso n\xE3o s\xF3 pela beleza
+    natural, mas tamb\xE9m pelas lendas locais. Segundo os moradores da regi\xE3o,
+    o po\xE7o recebeu esse nome devido a uma antiga hist\xF3ria de amor entre dois
+    jovens que se encontravam ali escondidos. A \xE1gua cristalina e a vegeta\xE7\xE3o
+    ao redor criam um ambiente rom\xE2ntico, tornando-o um lugar popular entre casais.
+    Al\xE9m disso, \xE9 dito que as \xE1guas do po\xE7o t\xEAm propriedades revigorantes,
+    proporcionando uma sensa\xE7\xE3o de bem-estar aos banhistas. "
   tooltipManager: {fileID: 696310343}
+  modalManager: {fileID: 889395613}
   holdTime: 1
   button: {fileID: 0}
 --- !u!114 &50526124
@@ -611,7 +490,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 143606430}
   m_OnClick:
     m_PersistentCalls:
@@ -666,8 +545,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08a6b01d2b2a6b84eb2f0b90af0edb6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageName: Fase 1
+  levelTitle: "Mirante de Vign\xE9"
+  description: "A Pedreira Vign\xE9, nomeada ap\xF3s a fam\xEDlia fazer parte do
+    ciclo de minera\xE7\xE3o  da Serra do Vulc\xE3o, no qual ainda tem uma pedreira
+    parcialmente ativa na regi\xE3o, explorou a montanha, causando impactos significativos,
+    criando 'feridas' nas montanhas que ainda s\xE3o vis\xEDveis hoje.    Apesar
+    disso, a \xE1rea \xE9 um testemunho da rica hist\xF3ria econ\xF4mica da regi\xE3o."
   tooltipManager: {fileID: 696310343}
+  modalManager: {fileID: 889395613}
   holdTime: 1
   button: {fileID: 0}
 --- !u!1 &304812408
@@ -721,8 +606,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08a6b01d2b2a6b84eb2f0b90af0edb6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageName: Fase 1
+  levelTitle: "Pedreira Varginha Vign\xE9"
+  description: "A Trilha da Varginha, com quase 2 mil metros de extens\xE3o, \xE9
+    significativa por sua import\xE2ncia geol\xF3gica. Integrando o Complexo Vulc\xE2nico
+    de Nova Igua\xE7u, a trilha surgiu nos anos 1970, revelando uma antiga cratera
+    vulc\xE2nica conhecida como Vulc\xE3o de Nova Igua\xE7u."
   tooltipManager: {fileID: 696310343}
+  modalManager: {fileID: 889395613}
   holdTime: 1
   button: {fileID: 0}
 --- !u!114 &304812411
@@ -764,7 +654,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 304812412}
   m_OnClick:
     m_PersistentCalls:
@@ -858,8 +748,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08a6b01d2b2a6b84eb2f0b90af0edb6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageName: Fase 1
+  levelTitle: "EXPLORA\xC7\xC3O NA MINA DO PO\xC7O ESMERALDA "
+  description: "O Po\xE7o Esmeralda recebe esse nome por suas \xE1guas cristalinas
+    e de um tom verde exuberante, que lembra a cor das esmeraldas. Este po\xE7o \xE9
+    um dos mais belos e tranquilos do Parque Municipal, proporcionando uma experi\xEAncia
+    visual deslumbrante e um ambiente sereno para os visitantes que buscam relaxar
+    e apreciar a natureza em sua forma mais pura. "
   tooltipManager: {fileID: 696310343}
+  modalManager: {fileID: 889395613}
   holdTime: 1
   button: {fileID: 0}
 --- !u!114 &315150846
@@ -995,8 +891,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08a6b01d2b2a6b84eb2f0b90af0edb6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageName: Fase 1
+  levelTitle: 'DUELO FINAL: O DESTINO DA SERRA'
+  description: "O Cassino Dom Felipe, fundado no in\xEDcio do s\xE9culo XX pelo comendador
+    portugu\xEAs Modesto Leal, era um dos maiores e mais seletos clubes de campo
+    da Am\xE9rica do Sul. Constru\xEDdo em estilo r\xFAstico mexicano em forma de
+    \u201CU\u201D, o cassino tinha piscina, quadras de esporte e um estande de tiros.
+    A alta sociedade frequentava o local, que tamb\xE9m foi usado como um cassino
+    clandestino na d\xE9cada de 1960. Hoje, restam apenas as ru\xEDnas desse ic\xF4nico
+    ponto tur\xEDstico de Nova Igua\xE7u. "
   tooltipManager: {fileID: 696310343}
+  modalManager: {fileID: 889395613}
   holdTime: 1
   button: {fileID: 0}
 --- !u!114 &347232963
@@ -1132,8 +1036,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08a6b01d2b2a6b84eb2f0b90af0edb6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageName: Fase 1
+  levelTitle: Entrada Norte do Parque
+  description: "A entrada da Rampa pode ser acessada pela estrada ao lado da UNIG,
+    levando voc\xEA por paisagens incr\xEDveis at\xE9 o ponto perfeito para admirar
+    a vista panor\xE2mica da Serra do Vulc\xE3o."
   tooltipManager: {fileID: 696310343}
+  modalManager: {fileID: 889395613}
   holdTime: 1
   button: {fileID: 0}
 --- !u!114 &418413583
@@ -1269,8 +1177,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08a6b01d2b2a6b84eb2f0b90af0edb6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageName: Fase 1
+  levelTitle: CONFLITO NA NATUREZA
+  description: "O Po\xE7o da Natureza \xE9 um ref\xFAgio tranquilo cercado por vegeta\xE7\xE3o
+    densa e exuberante. \xC9 um local popular para relaxar e aproveitar a serenidade
+    do Parque Municipal. Sua \xE1gua cristalina e ambiente natural oferecem uma experi\xEAncia
+    imersiva e refrescante para os visitantes, tornando-o um dos pontos mais apreciados
+    do parque. "
   tooltipManager: {fileID: 696310343}
+  modalManager: {fileID: 889395613}
   holdTime: 1
   button: {fileID: 0}
 --- !u!114 &454642978
@@ -1406,8 +1320,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08a6b01d2b2a6b84eb2f0b90af0edb6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageName: Fase 1
+  levelTitle: CONFRONTO NA SERRA DOS ANCESTRAIS
+  description: "A regi\xE3o do Parque Municipal de Nova Igua\xE7u tem uma rica hist\xF3ria
+    cultural ligada aos quilombolas e ind\xEDgenas. Segundo relatos hist\xF3ricos,
+    essa \xE1rea foi um ref\xFAgio para comunidades quilombolas, que escaparam da
+    escravid\xE3o e estabeleceram-se em lugares estrat\xE9gicos e de dif\xEDcil acesso.
+    Al\xE9m disso, vest\xEDgios e hist\xF3rias indicam que povos ind\xEDgenas tamb\xE9m
+    habitaram a regi\xE3o, contribuindo para a diversidade cultural e hist\xF3rica
+    que enriquece o parque at\xE9 hoje. "
   tooltipManager: {fileID: 696310343}
+  modalManager: {fileID: 889395613}
   holdTime: 1
   button: {fileID: 0}
 --- !u!114 &514078762
@@ -1626,6 +1548,152 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 603007166}
   m_CullTransparentMesh: 1
+--- !u!1 &604539427
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 604539428}
+  - component: {fileID: 604539432}
+  - component: {fileID: 604539431}
+  - component: {fileID: 604539430}
+  - component: {fileID: 604539429}
+  m_Layer: 5
+  m_Name: BottomButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &604539428
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604539427}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1940203992}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -568, y: -245.8}
+  m_SizeDelta: {x: 60, y: 60}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &604539429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604539427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08a6b01d2b2a6b84eb2f0b90af0edb6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelTitle: "Pedreira S\xE3o Jos\xE9 e Ascens\xE3o do Vulc\xE3o"
+  description: "A Pedreira S\xE3o Jos\xE9, localizada no Parque Municipal de Nova
+    Igua\xE7u, foi uma importante fonte de extra\xE7\xE3o de minerais na d\xE9cada
+    de 1980. Desativada em 1992, a pedreira deixou marcas significativas na paisagem
+    e na hist\xF3ria local.    A pedreira \xE9 um s\xEDmbolo da transi\xE7\xE3o da
+    explora\xE7\xE3o mineral para a preserva\xE7\xE3o ambiental, refletindo a mudan\xE7a
+    de paradigma em rela\xE7\xE3o ao uso e conserva\xE7\xE3o da Serra do Vulc\xE3o.
+    Hoje, \xE9 um ponto de interesse hist\xF3rico e geol\xF3gico dentro do parque,
+    destacando a import\xE2ncia da recupera\xE7\xE3o e preserva\xE7\xE3o ambiental. "
+  tooltipManager: {fileID: 696310343}
+  modalManager: {fileID: 889395613}
+  holdTime: 1
+  button: {fileID: 0}
+--- !u!114 &604539430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604539427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 2
+  m_Colors:
+    m_NormalColor: {r: 1, g: 0, b: 0.059999466, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 21300000, guid: afb9ba320c38f384cab80e1246906848, type: 3}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 0
+  m_TargetGraphic: {fileID: 604539431}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &604539431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604539427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 126efc11b08b4a149bbd801cb9641e52, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &604539432
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604539427}
+  m_CullTransparentMesh: 1
 --- !u!1 &617962011
 GameObject:
   m_ObjectHideFlags: 0
@@ -1780,140 +1848,6 @@ MonoBehaviour:
   zoomOutMin: 200
   zoomOutMax: 460
   mapRenderer: {fileID: 787273554}
---- !u!1 &684306760
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 684306761}
-  - component: {fileID: 684306763}
-  - component: {fileID: 684306762}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &684306761
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 684306760}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2139447393}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &684306762
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 684306760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Button
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &684306763
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 684306760}
-  m_CullTransparentMesh: 1
 --- !u!1 &696310341
 GameObject:
   m_ObjectHideFlags: 0
@@ -2005,108 +1939,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 696310341}
   m_CullTransparentMesh: 1
---- !u!1 &719012900
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 719012904}
-  - component: {fileID: 719012903}
-  - component: {fileID: 719012902}
-  - component: {fileID: 719012901}
-  m_Layer: 5
-  m_Name: Canvas
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &719012901
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 719012900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
---- !u!114 &719012902
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 719012900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
---- !u!223 &719012903
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 719012900}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 1
-  m_Camera: {fileID: 617962013}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 25
-  m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_TargetDisplay: 0
---- !u!224 &719012904
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 719012900}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 721185473}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
 --- !u!1 &720209611
 GameObject:
   m_ObjectHideFlags: 0
@@ -2158,8 +1990,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08a6b01d2b2a6b84eb2f0b90af0edb6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageName: Fase 1
+  levelTitle: Gruta do Quilombo
+  description: "A Gruta do Quilombo, tamb\xE9m conhecida como Gruta do Amor, \xE9
+    uma regi\xE3o rica em hist\xF3ria. Acredita-se que tenha servido como ref\xFAgio
+    para escravizados durante o per\xEDodo colonial. A vegeta\xE7\xE3o densa e bem
+    conservada torna a trilha uma aventura imersiva na natureza."
   tooltipManager: {fileID: 696310343}
+  modalManager: {fileID: 889395613}
   holdTime: 1
   button: {fileID: 0}
 --- !u!114 &720209614
@@ -2201,7 +2038,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 720209615}
   m_OnClick:
     m_PersistentCalls:
@@ -2243,96 +2080,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 720209611}
-  m_CullTransparentMesh: 1
---- !u!1 &721185472
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 721185473}
-  - component: {fileID: 721185476}
-  - component: {fileID: 721185475}
-  - component: {fileID: 721185474}
-  m_Layer: 5
-  m_Name: Viewport
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &721185473
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 721185472}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1828310018}
-  m_Father: {fileID: 719012904}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1200, y: 600}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &721185474
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 721185472}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ShowMaskGraphic: 1
---- !u!114 &721185475
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 721185472}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &721185476
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 721185472}
   m_CullTransparentMesh: 1
 --- !u!1 &728799898
 GameObject:
@@ -2385,8 +2132,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08a6b01d2b2a6b84eb2f0b90af0edb6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageName: Fase 1
+  levelTitle: "REVELA\xC7\xC3O NA JANELA DO C\xC9U "
+  description: "O Po\xE7o Janela do c\xE9u \xE9 conhecido por oferecer uma vista
+    deslumbrante que emoldura a paisagem do Parque Municipal. Este po\xE7o ganhou
+    seu nome devido \xE0 abertura natural entre as rochas, que cria uma \"janela\"
+    perfeita para observar a cachoeira V\xE9u da Noiva e a vegeta\xE7\xE3o exuberante
+    ao redor. "
   tooltipManager: {fileID: 696310343}
+  modalManager: {fileID: 889395613}
   holdTime: 1
   button: {fileID: 0}
 --- !u!114 &728799901
@@ -2522,8 +2275,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08a6b01d2b2a6b84eb2f0b90af0edb6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageName: Fase 1
+  levelTitle: "ENIGMA NO PO\xC7O DO CASAR\xC3O "
+  description: "O Po\xE7o do Casar\xE3o fica pr\xF3ximo \xE0s ru\xEDnas do antigo
+    casar\xE3o da Fazenda Dona Eug\xEAnia, constru\xEDdo no final do s\xE9culo XIX.
+    A proximidade com essas ru\xEDnas hist\xF3ricas adiciona um charme especial ao
+    local, fazendo dele um ponto de interesse n\xE3o apenas natural, mas tamb\xE9m
+    cultural e hist\xF3rico. "
   tooltipManager: {fileID: 696310343}
+  modalManager: {fileID: 889395613}
   holdTime: 1
   button: {fileID: 0}
 --- !u!114 &764584305
@@ -2683,6 +2442,95 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 787273551}
   m_CullTransparentMesh: 1
+--- !u!1 &889395612
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 889395615}
+  - component: {fileID: 889395614}
+  - component: {fileID: 889395613}
+  - component: {fileID: 889395617}
+  - component: {fileID: 889395616}
+  m_Layer: 5
+  m_Name: UIDocument
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &889395613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889395612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed9be7c95ee31f94aa11251152150c2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  document: {fileID: 889395614}
+--- !u!114 &889395614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889395612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PanelSettings: {fileID: 11400000, guid: a7e5ba3e2ddd5c245bbab558a3608d22, type: 2}
+  m_ParentUI: {fileID: 0}
+  sourceAsset: {fileID: 9197481963319205126, guid: d3a3b741ed54bef4fafcfcc40c0c7a93,
+    type: 3}
+  m_SortingOrder: 0
+--- !u!4 &889395615
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889395612}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &889395616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889395612}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da935398073b5584e87fdba89affe7a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &889395617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889395612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed64f1afaa6883844b8d377d10f9160f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1130891016
 GameObject:
   m_ObjectHideFlags: 0
@@ -2734,8 +2582,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08a6b01d2b2a6b84eb2f0b90af0edb6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageName: Fase 1
+  levelTitle: PERIGO NO ESCORREGA
+  description: "O Po\xE7o do Escorrega \xE9 um dos mais divertidos do Parque Municipal,
+    famoso por sua grande rocha lisa que os visitantes usam como um escorregador
+    natural. Esta forma\xE7\xE3o rochosa proporciona uma experi\xEAncia emocionante
+    e refrescante, tornando o Po\xE7o do Escorrega um destino popular para fam\xEDlias
+    e aventureiros que buscam divers\xE3o e um toque de adrenalina em meio \xE0 natureza. "
   tooltipManager: {fileID: 696310343}
+  modalManager: {fileID: 889395613}
   holdTime: 1
   button: {fileID: 0}
 --- !u!114 &1130891019
@@ -2871,8 +2725,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08a6b01d2b2a6b84eb2f0b90af0edb6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageName: Fase 1
+  levelTitle: 'Mata Fome '
+  description: "Nomeado por sua abund\xE2ncia de recursos naturais, Mata Fome \xE9
+    famoso por suas quedas d'\xE1gua e nascentes cristalinas. Com uma biodiversidade
+    rica, incluindo \xE1rvores frut\xEDferas como: Jabuticaba e Maracuj\xE1 que s\xE3o
+    nativas da Mata Atl\xE2ntica, a \xE1rea tamb\xE9m enfrenta desafios de preserva\xE7\xE3o
+    devido ao impacto humano."
   tooltipManager: {fileID: 696310343}
+  modalManager: {fileID: 889395613}
   holdTime: 1
   button: {fileID: 0}
 --- !u!114 &1146255729
@@ -2914,7 +2774,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 1146255730}
   m_OnClick:
     m_PersistentCalls:
@@ -3008,8 +2868,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08a6b01d2b2a6b84eb2f0b90af0edb6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageName: Fase 1
+  levelTitle: "Cabana do Vulc\xE3o"
+  description: "A Cabana do Vulc\xE3o est\xE1 na zona de amortecimento do Parque,
+    o Parque Natural Municipal de Nova Igua\xE7u, no Maci\xE7o Gericin\xF3-Mendanha
+    por ser uma unidade de prote\xE7\xE3o integral n\xE3o pode  haver moradias. Esta
+    \xE1rea protegida preserva a natureza , permitindo apenas atividades sem danos
+    ao meio ambiente.   Guias  credenciados oferecem passeios com hist\xF3rias fascinantes
+    sobre o local. Descubrar a magia da Cabana do Vulc\xE3o! "
   tooltipManager: {fileID: 696310343}
+  modalManager: {fileID: 889395613}
   holdTime: 1
   button: {fileID: 0}
 --- !u!114 &1337914783
@@ -3145,8 +3012,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08a6b01d2b2a6b84eb2f0b90af0edb6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageName: Fase 1
+  levelTitle: "O RENASCER NO PO\xC7O DAS TREVAS "
+  description: "O Po\xE7o da Hidromassagem ganhou esse nome devido \xE0 a\xE7\xE3o
+    natural da \xE1gua que, ao passar por uma s\xE9rie de pequenas cascatas, cria
+    um efeito semelhante ao de uma hidromassagem. As bolhas e a movimenta\xE7\xE3o
+    da \xE1gua proporcionam um relaxamento natural aos visitantes, fazendo deste
+    po\xE7o um dos favoritos para quem busca um momento de tranquilidade em meio
+    \xE0 natureza. Al\xE9m disso, a \xE1gua corrente ajuda a manter o po\xE7o sempre
+    limpo e fresco. "
   tooltipManager: {fileID: 696310343}
+  modalManager: {fileID: 889395613}
   holdTime: 1
   button: {fileID: 0}
 --- !u!114 &1422046345
@@ -3350,8 +3225,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08a6b01d2b2a6b84eb2f0b90af0edb6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageName: Fase 1
+  levelTitle: 'Floresta em Perigo: O Caminho de Jamil'
+  description: "O Caminho do Jamil \xE9 uma trilha muito utilizada por moradores
+    e visitantes da Serra do Vulc\xE3o. Aqui, voc\xEA encontrar\xE1 uma rica diversidade
+    de plantas ex\xF3ticas, como a Bananeira e Pinheiro. Apesar das regras de preserva\xE7\xE3o,
+    ainda \xE9 poss\xEDvel ver sinais de presen\xE7a humana e marcas de gado nas
+    \xE1reas mais elevadas."
   tooltipManager: {fileID: 696310343}
+  modalManager: {fileID: 889395613}
   holdTime: 1
   button: {fileID: 0}
 --- !u!114 &1630572749
@@ -3393,7 +3274,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 1630572750}
   m_OnClick:
     m_PersistentCalls:
@@ -3487,8 +3368,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08a6b01d2b2a6b84eb2f0b90af0edb6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageName: Fase 1
+  levelTitle: "Pra\xE7a do Boi: Bosque T\xF3xico"
+  description: "Trilha da Varginha e Pra\xE7a do Boi Curiosidade:   A Trilha da Varginha,
+    com quase 2 mil metros de extens\xE3o e n\xEDvel de exig\xEAncia moderado, \xE9
+    significativa por sua import\xE2ncia geol\xF3gica, integrando o Complexo Vulc\xE2nico
+    de Nova Igua\xE7u. Surgida nos anos 1970, a trilha revela uma antiga cratera
+    vulc\xE2nica, desapropriada devido \xE0 sua relev\xE2ncia geol\xF3gica. A cratera,
+    conhecida como Vulc\xE3o de Nova Igua\xE7u, \xE9 um marco importante. A descida
+    at\xE9 a cratera, chamada Pra\xE7a do Boi, se conecta \xE0 trilha da Pedra da
+    Contenda. "
   tooltipManager: {fileID: 696310343}
+  modalManager: {fileID: 889395613}
   holdTime: 1
   button: {fileID: 0}
 --- !u!114 &1645898403
@@ -3530,7 +3420,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 1645898404}
   m_OnClick:
     m_PersistentCalls:
@@ -3624,8 +3514,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08a6b01d2b2a6b84eb2f0b90af0edb6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageName: Fase 1
+  levelTitle: Pedra da Contenda
+  description: "A Pedra da Contenda, tamb\xE9m conhecida como Pedra do Quilombo,
+    oferece uma vista panor\xE2mica de 443 metros de altitude. Historicamente, foi
+    um marco divis\xF3rio entre antigas fazendas. A subida \xE9 \xEDngreme, mas a
+    vista recompensa o esfor\xE7o, sendo um destino popular para ecoturismo."
   tooltipManager: {fileID: 696310343}
+  modalManager: {fileID: 889395613}
   holdTime: 1
   button: {fileID: 0}
 --- !u!114 &1700552658
@@ -3667,7 +3562,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 1700552659}
   m_OnClick:
     m_PersistentCalls:
@@ -3761,8 +3656,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08a6b01d2b2a6b84eb2f0b90af0edb6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageName: Fase 1
+  levelTitle: "DESOLA\xC7\xC3O NO PO\xC7O SERENO"
+  description: "O Po\xE7o Sereno \xE9 famoso por suas \xE1guas tranquilas e cristalinas,
+    que refletem a vegeta\xE7\xE3o ao redor criando um ambiente de paz e sossego.
+    Este po\xE7o \xE9 ideal para quem busca um ref\xFAgio calmo para medita\xE7\xE3o
+    ou simplesmente para apreciar a natureza. A tranquilidade das \xE1guas do Po\xE7o
+    Sereno o torna um local perfeito para relaxar e recarregar as energias. "
   tooltipManager: {fileID: 696310343}
+  modalManager: {fileID: 889395613}
   holdTime: 1
   button: {fileID: 0}
 --- !u!114 &1818485176
@@ -3847,145 +3748,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1818485173}
   m_CullTransparentMesh: 1
---- !u!1 &1828310017
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1828310018}
-  - component: {fileID: 1828310020}
-  - component: {fileID: 1828310019}
-  - component: {fileID: 1828310022}
-  - component: {fileID: 1828310021}
-  - component: {fileID: 1828310023}
-  m_Layer: 5
-  m_Name: Mapa
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1828310018
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1828310017}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2139447393}
-  m_Father: {fileID: 721185473}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1200, y: 600}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1828310019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1828310017}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a22ad37047a633e418473b3eb1f2e207, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1828310020
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1828310017}
-  m_CullTransparentMesh: 1
---- !u!114 &1828310021
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1828310017}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7d997796ce36c74b9cb4af00ef2c8c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  map: {fileID: 1828310018}
-  zoomSpeed: 5
-  minZoom: 1
-  maxZoom: 10
---- !u!114 &1828310022
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1828310017}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Content: {fileID: 1828310018}
-  m_Horizontal: 1
-  m_Vertical: 1
-  m_MovementType: 1
-  m_Elasticity: 0.1
-  m_Inertia: 1
-  m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 1
-  m_Viewport: {fileID: 0}
-  m_HorizontalScrollbar: {fileID: 0}
-  m_VerticalScrollbar: {fileID: 0}
-  m_HorizontalScrollbarVisibility: 0
-  m_VerticalScrollbarVisibility: 0
-  m_HorizontalScrollbarSpacing: 0
-  m_VerticalScrollbarSpacing: 0
-  m_OnValueChanged:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &1828310023
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1828310017}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b56c92b9f6d4358478d53fde9507ab1e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  map: {fileID: 1828310018}
-  viewport: {fileID: 721185473}
 --- !u!1 &1889521717
 GameObject:
   m_ObjectHideFlags: 0
@@ -4037,8 +3799,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08a6b01d2b2a6b84eb2f0b90af0edb6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageName: Fase 1
+  levelTitle: 
+  description: 
   tooltipManager: {fileID: 696310343}
+  modalManager: {fileID: 0}
   holdTime: 1
   button: {fileID: 0}
 --- !u!114 &1889521720
@@ -4174,8 +3938,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08a6b01d2b2a6b84eb2f0b90af0edb6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageName: Fase 1
+  levelTitle: Rampa de Voo
+  description: "A Rampa de Voo da Serra do Vulc\xE3o \xE9 um ponto famoso entre praticantes
+    de parapente e asa delta, conhecida por suas condi\xE7\xF5es de vento ideais
+    e vistas panor\xE2micas deslumbrantes. Frequentemente utilizada para eventos
+    e competi\xE7\xF5es, oferece uma vis\xE3o de 360 graus que abrange a cidade de
+    Nova Igua\xE7u e a Baixada Fluminense, tornando cada voo uma experi\xEAncia inesquec\xEDvel."
   tooltipManager: {fileID: 696310343}
+  modalManager: {fileID: 889395613}
   holdTime: 1
   button: {fileID: 0}
 --- !u!114 &1904413534
@@ -4217,7 +3987,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 1904413535}
   m_OnClick:
     m_PersistentCalls:
@@ -4362,11 +4132,11 @@ RectTransform:
   - {fileID: 1904413532}
   - {fileID: 1146255727}
   - {fileID: 1630572747}
-  - {fileID: 3613012}
   - {fileID: 304812409}
   - {fileID: 1645898401}
   - {fileID: 1700552656}
   - {fileID: 1889521718}
+  - {fileID: 604539428}
   - {fileID: 50526122}
   - {fileID: 5365997}
   - {fileID: 1422046343}
@@ -4386,132 +4156,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1508, y: 725}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &2139447392
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2139447393}
-  - component: {fileID: 2139447396}
-  - component: {fileID: 2139447395}
-  - component: {fileID: 2139447394}
-  m_Layer: 5
-  m_Name: Button
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2139447393
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2139447392}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 684306761}
-  m_Father: {fileID: 1828310018}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -760, y: -32}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2139447394
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2139447392}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 2139447395}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &2139447395
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2139447392}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &2139447396
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2139447392}
-  m_CullTransparentMesh: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 617962014}
   - {fileID: 1591501788}
+  - {fileID: 889395615}
   - {fileID: 1940203992}
-  - {fileID: 719012904}

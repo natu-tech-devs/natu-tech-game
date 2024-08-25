@@ -1,6 +1,39 @@
-.container {
-    height: 1920px;
-    width: 1080px;
-    background-color: rgb(0, 0, 0);
-    background-image: resource('Images/General/level-map');
+.levels-screen-container {
+    
+    
+    align-items: end;
+    padding-top: 32px;
+    padding-right: 32px;
+    padding-bottom: 32px;
+    padding-left: 32px;
+}
+
+.levsls-screen-buttons {
+}
+
+.levels-screen-button {
+    width: 64px;
+    height: 64px;
+    background-color: rgba(255, 0, 0, 0);
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    transition: scale 0.2s;
+}
+
+.levels-screen-button:active {
+    scale: 0.9;
+}
+
+.star-button {
+    background-image: resource('Images/Icons/star-icon');
 }

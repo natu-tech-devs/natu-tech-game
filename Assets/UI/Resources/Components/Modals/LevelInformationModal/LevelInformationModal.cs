@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -15,7 +16,7 @@ public class LevelInformationModal : VisualElement
     public string Title
     {
         get => title.text;
-        set => title.text = value;
+        set => title.text = CapitalizeTitle(value);
     }
 
     public string Description
@@ -31,6 +32,21 @@ public class LevelInformationModal : VisualElement
         this.AddToClassList("modal");
 
         CreateControls();
+    }
+
+    public string CapitalizeTitle(string text)
+    {
+        var words = text.Trim().Split(' ');
+        return words.Aggregate("", (acc, word) =>
+        {
+            var articles = new string[] { "de", "da", "do", "dos", "das" };
+            if ((word.Length <= 2 || articles.Contains(word.ToLower())) && !word.Equals(words.First()))
+            {
+                return acc + word.ToLower() + " ";
+            }
+
+            return acc + word.First().ToString().ToUpper() + word.Substring(1).ToLower() + " ";
+        });
     }
 
     private void CreateControls()

@@ -48,7 +48,7 @@
 }
 
 .logo {
-    background-image: resource('Images/Logo/logo-purple');
+    background-image: resource('Images/Logo/logo-green');
     max-width: none;
     max-height: none;
     width: 220px;
