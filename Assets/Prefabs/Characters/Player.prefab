@@ -56,7 +56,13 @@ MonoBehaviour:
   attacker: {fileID: 0}
   defender: {fileID: 0}
   statusEffect: {fileID: 0}
+  playerSpheres:
+    waterSphere: {fileID: 0}
+    fireSphere: {fileID: 0}
+    airShpere: {fileID: 0}
+    earthSphere: {fileID: 0}
   sphere: {fileID: 532968164907516632, guid: 267e70b98a8f49e4988d148a869dc2bd, type: 3}
+  attacked: 0
   launchForce: 15
 --- !u!114 &460295897650307582
 MonoBehaviour:
@@ -117,6 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2517ad47dfaf74f44bbb3386b57307c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 100
   onDeath:
     m_PersistentCalls:
       m_Calls: []
@@ -134,6 +141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defenseMultiplier: 1
   attackMultiplier: 1
+  currentElement: 0
 --- !u!114 &1032313544532021048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,6 +159,9 @@ MonoBehaviour:
     type: 1
     element: 256
   attackRatio: 1
+  attackSpeed: 1
+  attackTime: 0
+  agentSide: 2
 --- !u!114 &7977361902258193684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,6 +175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defenseRatio: 1
+  agentSide: 2
 --- !u!33 &8372174170344141261
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -192,7 +204,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: -2505642851634945670, guid: f396e3429a4864fc2ad497cb3ce5fe2c, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

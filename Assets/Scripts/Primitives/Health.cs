@@ -13,6 +13,7 @@ public class Health : MonoBehaviour
 
     [SerializeField]
     public float health = 100f;
+    private float maxHealth = 100f;
 
     public Action onDamage;
 
@@ -46,6 +47,8 @@ public class Health : MonoBehaviour
     {
         if (!healConditions.Aggregate(true, (acc, current) => acc && current(health, value))) return;
         health += value;
+        if (health > maxHealth)
+            health = maxHealth;
     }
 
     public void _die()

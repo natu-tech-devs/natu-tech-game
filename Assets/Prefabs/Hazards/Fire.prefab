@@ -4899,6 +4899,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defenseRatio: 1
+  agentSide: 2
 --- !u!114 &4975948954048623903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4933,6 +4934,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defenseMultiplier: 1
   attackMultiplier: 1
+  currentElement: 0
 --- !u!114 &8895556096283894175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4950,6 +4952,9 @@ MonoBehaviour:
     type: 0
     element: 16
   attackRatio: 1
+  attackSpeed: 1
+  attackTime: 0
+  agentSide: 2
 --- !u!135 &2971701731208573853
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -9907,7 +9912,7 @@ ParticleSystem:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  moveWithTransform: 1
+  moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
   randomSeed: 0
@@ -14610,7 +14615,7 @@ ParticleSystemRenderer:
   m_SortingFudge: 0
   m_NormalDirection: 1
   m_ShadowBias: 0
-  m_RenderAlignment: 0
+  m_RenderAlignment: 1
   m_Pivot: {x: 0, y: 0, z: 0}
   m_Flip: {x: 0, y: 0, z: 0}
   m_EnableGPUInstancing: 1
