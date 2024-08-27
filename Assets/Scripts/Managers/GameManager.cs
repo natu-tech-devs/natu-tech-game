@@ -56,7 +56,7 @@ public class GameManager : MonoBehaviour
         {
             playerFailure();
         }
-        var coroutine = StartCoroutine(startTurn());
+        StartCoroutine(startTurn());
     }
 
     public void playerSuccess()
