@@ -1,0 +1,40 @@
+@import url("project://database/Assets/UI/Resources/GlobalStyles/GlobalStyles.uss?fileID=7433441132597879392&guid=55b51d087ab63184aa220d3790e30de0&type=3#GlobalStyles");
+.attack-button {
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0;
+    padding: 0;
+    margin: 0;
+    width: 48px;
+    height: 48px;
+    overflow: visible;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.attack-button-icon {
+    width: 48px;
+    height: 48px;
+    max-height: none;
+    min-height: 48px;
+    background-image: resource('Images/Icons/fire-ball-icon');
+    -unity-background-scale-mode: stretch-to-fill;
+}
+
+.attack-button-label {
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 16px;
+    position: absolute;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    color: rgb(255, 255, 255);
+    -unity-font: var(--font-display);
+    -unity-font-definition: initial;
+    bottom: -4px;
+    right: -10px;
+}

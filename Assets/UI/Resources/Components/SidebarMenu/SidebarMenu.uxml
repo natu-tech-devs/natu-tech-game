@@ -1,0 +1,27 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+
+    <Style src="project://database/Assets/UI/Resources/Components/SidebarMenu/SidebarMenu.uss" />
+
+
+        <ui:VisualElement name="sidebar-menu" class="sidebar-menu">
+
+            <ui:VisualElement name="sidebar-menu-buttons" class="sidebar-menu-buttons">
+                <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="play-pause-button" class="play-pause-button menu-button gap" />
+                <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="fire-button" class="fire-button menu-button gap" />
+                <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="settings-button" class="settings-button menu-button gap" />
+                <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="sound-button" class="sound-button menu-button gap" />
+                <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="marketplace-button" class="marketplace-button menu-button gap" />
+                <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="camera-button" class="camera-button menu-button gap" />
+                <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="share-button" class="share-button menu-button gap" />
+                <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="home-button" class="home-button menu-button gap" />
+                <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="zoom-button" class="zoom-button menu-button" />
+            </ui:VisualElement>
+            
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="sidebar-menu-control" class="sidebar-menu-control">
+                <ui:VisualElement name="sidebar-menu-control-icon" class="sidebar-menu-control-icon" style="flex-grow: 1;" />
+            </ui:Button>
+
+        </ui:VisualElement>
+
+
+</ui:UXML>
