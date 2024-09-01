@@ -1,0 +1,45 @@
+@import url("project://database/Assets/UI/Resources/GlobalStyles/GlobalStyles.uss?fileID=7433441132597879392&guid=55b51d087ab63184aa220d3790e30de0&type=3#GlobalStyles");
+.container {
+    height: 100%;
+}
+
+.timer-container {
+    -unity-font: var(--font-display);
+    -unity-font-definition: initial;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: absolute;
+    left: 50%;
+    translate: -50% 0;
+}
+
+.timer-number {
+    font-size: 48px;
+    padding: 0;
+    margin: 0;
+    height: 56px;
+}
+
+.timer-label {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    width: 72px;
+    -unity-text-align: upper-center;
+}
+
+.attack-buttons-container {
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    translate: -50% 0;
+}
+
+.lifes-container {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+}
