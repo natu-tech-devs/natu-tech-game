@@ -1,0 +1,16 @@
+.lifes-wrapper {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.life {
+    width: 32px;
+    height: 24px;
+    margin-left: 5px;
+    background-image: resource('Images/Icons/life-icon');
+}
+
+.life-filled {
+    background-image: resource('Images/Icons/life-filled-icon');
+}
